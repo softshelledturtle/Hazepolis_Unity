@@ -72,7 +72,7 @@ public class DialogManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T) && isActive == true)
+        if (Input.GetMouseButtonDown(0) && isActive == true)
         {
             NextMessage();
         }
