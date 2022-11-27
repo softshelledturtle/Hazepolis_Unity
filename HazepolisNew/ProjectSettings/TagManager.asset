@@ -8,7 +8,6 @@ TagManager:
   - Box
   - Bridge
   - Interactable
-  - MapConfiner
   layers:
   - Default
   - TransparentFX
