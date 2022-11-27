@@ -4841,11 +4841,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2221515451787348195, guid: 51db9664f3a431b42a02b931ee93a0ce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.88
+      value: 6.8
       objectReference: {fileID: 0}
     - target: {fileID: 2221515451787348195, guid: 51db9664f3a431b42a02b931ee93a0ce, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -18.32
+      value: -29.3
       objectReference: {fileID: 0}
     - target: {fileID: 2221515451787348195, guid: 51db9664f3a431b42a02b931ee93a0ce, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10141,6 +10141,47 @@ PrefabInstance:
       propertyPath: DialogUI
       value: 
       objectReference: {fileID: 1798958628}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: npcs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: messages.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: npcs.Array.data[0].name
+      value: "\u5C0F\u7537\u5B69"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: npcs.Array.data[1].name
+      value: "\u5C0F\u5973\u5B69"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: npcs.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3c9609a049f85f0488091cc9d44cf718, type: 3}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: npcs.Array.data[1].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9daa762c120e66741b0aa419b20213ad, type: 3}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: messages.Array.data[1].npcId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: messages.Array.data[0].message
+      value: "\u563B\u563B\u563B\uFF0C\u6211\u8DDF\u4F60\u6253\u8CED\uFF0C\u8001\u9EA5\u7279\u7D55\u5C0D\u627E\u4E0D\u5230\u6211\u5077\u62FF\u7684\u6212\u6307\uFF0C\u9019\u6B21\u53EF\u662F\u85CF\u5728\u6211\u7CBE\u6311\u7D30\u9078\u7684\u7BB1\u5B50\u88E1\u5462\uFF01"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: messages.Array.data[1].message
+      value: "\u597D\u554A\uFF0C\u6211\u8CED\u534A\u584A\u9ED1\u9EB5\u5305\u4E0D\u5230\u534A\u5929\u4ED6\u5C31\u6703\u627E\u5230
+        \u4E0D\u904E\u6A4B\u5340\u9019\u9EBC\u591A\u7BB1\u5B50\u4F60\u9084\u8A18\u5F97\u653E\u54EA\u55CE?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: messages.Array.data[2].message
+      value: "\u7576\u7136\u4E0D\u8A18\u5F97\u5566\u54C8\u54C8\u54C8"
+      objectReference: {fileID: 0}
     - target: {fileID: 5709138920162349220, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
       propertyPath: m_Size.x
       value: 5.52
@@ -12480,6 +12521,29 @@ PrefabInstance:
       propertyPath: DialogUI
       value: 
       objectReference: {fileID: 1798958628}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: npcs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: messages.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: npcs.Array.data[0].name
+      value: "\u8001\u4EBA"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: npcs.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d1d236997730ef5409761f4cfe603748, type: 3}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: messages.Array.data[0].message
+      value: "\u60F3\u7576\u521D\u6771\u908A\u6230\u722D\u525B\u71C3\u8D77\u6642\uFF0C\u57CE\u88E1\u7684\u4EBA\u90FD\u7B11\u8AAA
+        \u6771\u908A\u57CE\u5E02\u7121\u77E5\u7684\u53EA\u77E5\u9053\u7528\u66B4\u529B\u89E3\u6C7A\u4E8B\u60C5\uFF0C\u53EF
+        \u8AB0\u77E5\u7576\u6230\u706B\u5EF6\u71D2\u8D77\u4F86\u5F8C\uFF0C\u6700\u7D42\u6211\u5011\u7684\u57CE\u93AE\u4E5F
+        \u8986\u6EC5\u65BC\u5176\u4E4B\u4E2D"
+      objectReference: {fileID: 0}
     - target: {fileID: 5709138920162349220, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
       propertyPath: m_Size.x
       value: 6.46
@@ -12896,6 +12960,47 @@ PrefabInstance:
       propertyPath: DialogUI
       value: 
       objectReference: {fileID: 1798958628}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: npcs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: messages.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: npcs.Array.data[0].name
+      value: "\u5C0F\u7537\u5B69"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: npcs.Array.data[1].name
+      value: "\u5C0F\u5973\u5B69"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: npcs.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3c9609a049f85f0488091cc9d44cf718, type: 3}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: npcs.Array.data[1].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9daa762c120e66741b0aa419b20213ad, type: 3}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: messages.Array.data[1].npcId
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: messages.Array.data[0].message
+      value: "\u563B\u563B\u563B\uFF0C\u6211\u8DDF\u4F60\u6253\u8CED\uFF0C\u8001\u9EA5\u7279\u7D55\u5C0D\u627E\u4E0D\u5230\u6211\u5077\u62FF\u7684\u6212\u6307\uFF0C\u9019\u6B21\u53EF\u662F\u85CF\u5728\u6211\u7CBE\u6311\u7D30\u9078\u7684\u7BB1\u5B50\u88E1\u5462\uFF01"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: messages.Array.data[1].message
+      value: "\u597D\u554A\uFF0C\u6211\u8CED\u534A\u584A\u9ED1\u9EB5\u5305\u4E0D\u5230\u534A\u5929\u4ED6\u5C31\u6703\u627E\u5230
+        \u4E0D\u904E\u6A4B\u5340\u9019\u9EBC\u591A\u7BB1\u5B50\u4F60\u9084\u8A18\u5F97\u653E\u54EA\u55CE?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: messages.Array.data[2].message
+      value: "\u7576\u7136\u4E0D\u8A18\u5F97\u5566\u54C8\u54C8\u54C8"
+      objectReference: {fileID: 0}
     - target: {fileID: 5709138920162349220, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
       propertyPath: m_Size.x
       value: 5.75
@@ -16631,7 +16736,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1890297291}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.4300003, y: -14.540001, z: -11.35}
+  m_LocalPosition: {x: 10.25, y: -25.519999, z: -11.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 850396999}
@@ -17498,7 +17603,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1962299292}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.4300003, y: -14.540001, z: -11.35}
+  m_LocalPosition: {x: 10.25, y: -25.519999, z: -11.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1039341260}
@@ -17544,8 +17649,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030518, y: -9.623989}
-  m_SizeDelta: {x: 930, y: 1359.373}
+  m_AnchoredPosition: {x: -0.000030518, y: 20}
+  m_SizeDelta: {x: 930, y: 1250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1973666610
 MonoBehaviour:
@@ -18062,6 +18167,26 @@ PrefabInstance:
       propertyPath: DialogUI
       value: 
       objectReference: {fileID: 1798958628}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: npcs.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: messages.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: npcs.Array.data[0].name
+      value: "\u798F\u5C40"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: npcs.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b3a5bc2cf1361554e800e98bd36cd927, type: 3}
+    - target: {fileID: 5709138920162349219, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: messages.Array.data[0].message
+      value: "\u6211\u662F\u6CBB\u5B89\u968A\u5B88\u9580\u4EBA\uFF0C\u8FD1\u65E5\u4E0A\u9762\u4E0B\u9054\u547D\u4EE4\uFF0C\u6703\u66F4\u52A0\u56B4\u683C\u5BE9\u67E5\u5404\u4F4D\uFF0C\u8ACB\u8010\u5FC3\u6392\u597D\u968A\u4F0D\u4E26\u51FA\u793A\u901A\u884C\u8B49\uFF0C\u4EE5\u53CA\u914D\u5408\u6AA2\u67E5\u3002\u6C92\u4EBA\u5E0C\u671B\u8DDF\u6211\u5011\u8D70\u4E00\u8D9F\u76E3\u6240\u5427?"
+      objectReference: {fileID: 0}
     - target: {fileID: 5709138920162349220, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
       propertyPath: m_Size.x
       value: 10.01
