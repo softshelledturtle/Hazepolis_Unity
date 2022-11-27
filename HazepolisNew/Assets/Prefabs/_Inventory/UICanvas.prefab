@@ -4138,8 +4138,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u5B58\u6A94"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 865df9aa6d909994c817663f708d711c, type: 2}
+  m_sharedMaterial: {fileID: -975520002497746532, guid: 865df9aa6d909994c817663f708d711c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
