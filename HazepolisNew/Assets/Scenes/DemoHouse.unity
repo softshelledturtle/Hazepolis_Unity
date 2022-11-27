@@ -1104,8 +1104,8 @@ GameObject:
   - component: {fileID: 800772187}
   - component: {fileID: 800772186}
   m_Layer: 20
-  m_Name: Map-confinder
-  m_TagString: Untagged
+  m_Name: Map-confiner
+  m_TagString: MapConfiner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1236,18 +1236,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &898120847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779534658}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b92a3ec7d914f74d9257b539c3f093e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &911711007
 GameObject:
   m_ObjectHideFlags: 0
@@ -1479,7 +1467,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ConfineMode: 0
   m_BoundingVolume: {fileID: 0}
-  m_BoundingShape2D: {fileID: 800772186}
+  m_BoundingShape2D: {fileID: 0}
   m_ConfineScreenEdges: 1
   m_Damping: 0
 --- !u!114 &955078862
@@ -2079,19 +2067,19 @@ PrefabInstance:
       objectReference: {fileID: 2085636258}
     - target: {fileID: 1531908345454074592, guid: c6970ca0c4a95ba41ab70ec539322df7, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1531908345454074592, guid: c6970ca0c4a95ba41ab70ec539322df7, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1531908345454074592, guid: c6970ca0c4a95ba41ab70ec539322df7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 73.8312
       objectReference: {fileID: 0}
     - target: {fileID: 1531908345454074592, guid: c6970ca0c4a95ba41ab70ec539322df7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -72.913
       objectReference: {fileID: 0}
     - target: {fileID: 6252069412753682269, guid: c6970ca0c4a95ba41ab70ec539322df7, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2596,7 +2584,7 @@ GameObject:
   - component: {fileID: 1779534660}
   - component: {fileID: 1779534659}
   - component: {fileID: 1779534661}
-  - component: {fileID: 898120847}
+  - component: {fileID: 1779534663}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -2668,9 +2656,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ConfineMode: 0
   m_BoundingVolume: {fileID: 0}
-  m_BoundingShape2D: {fileID: 800772186}
+  m_BoundingShape2D: {fileID: 0}
   m_ConfineScreenEdges: 1
   m_Damping: 0
+--- !u!114 &1779534663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779534658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b92a3ec7d914f74d9257b539c3f093e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1826230593 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9204862101612652012, guid: c6970ca0c4a95ba41ab70ec539322df7, type: 3}
