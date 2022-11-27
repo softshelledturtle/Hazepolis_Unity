@@ -3,9 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Inventory.Model
+namespace Inventory.UI
 {
-    public abstract class ItemSO : ScriptableObject
+    [CreateAssetMenu]
+    public class ItemSO : ScriptableObject
     {
         [field: SerializeField]
         public bool IsStackable { get; set; }
