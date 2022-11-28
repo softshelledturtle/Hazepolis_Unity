@@ -8,7 +8,11 @@ public class Actor : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player") == true && Input.GetKeyDown(KeyCode.T))trigger.StartDialog();
+        if (collision.gameObject.CompareTag("Player") == true && Input.GetKeyDown(KeyCode.T))
+        {
+            trigger.StartDialog();
+        }
+        
     }
 
 }
