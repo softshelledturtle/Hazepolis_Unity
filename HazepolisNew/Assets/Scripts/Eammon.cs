@@ -70,7 +70,7 @@ public class Eammon : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("collision");
+        Debug.Log("collision" + collision.gameObject.tag);
 
         if ((collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Box" || collision.gameObject.tag == "Bridge") && afterSu)
         {

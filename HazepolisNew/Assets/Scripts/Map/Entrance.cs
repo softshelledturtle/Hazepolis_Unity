@@ -19,7 +19,7 @@ public class Entrance : MonoBehaviour
         }
         else
         {
-            Debug.Log("WRONG");
+            Debug.Log("WRONGENTER");
         }
     }
 }

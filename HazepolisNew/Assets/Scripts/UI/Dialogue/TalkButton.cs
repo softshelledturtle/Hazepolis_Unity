@@ -28,9 +28,9 @@ public class TalkButton : MonoBehaviour
             DialogUI.SetActive(true);
             trigger.StartDialog();
             Debug.Log("Conversation");
-            if (this.tag == "Interactable Object")
+            if (this.tag == "Interactable")
             {
-                Debug.Log("Interactable Interacted");
+                this.GetComponent<Interactable>().Interact();
             }
         }
     }
