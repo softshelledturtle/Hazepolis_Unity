@@ -10,7 +10,7 @@ public class PickupSystem : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Item item = collision.GetComponent<Item>();
+        ItemOld item = collision.GetComponent<ItemOld>();
         if (item != null)
         {
             int reminder = inventoryData.AddItem(item.InventoryItem, item.Quantity);

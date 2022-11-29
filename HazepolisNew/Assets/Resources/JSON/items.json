@@ -1,0 +1,10 @@
+[
+  {
+    "objectSlug": "coffee_log",
+    "itemName": "Log Coffee",
+    "description": "A coffee that logs something to the console.",
+    "itemType": "Consumable",
+    "actionName": "Drink",
+    "itemModifier": 0
+  }
+]

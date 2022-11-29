@@ -6342,11 +6342,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2084295443996336587, guid: 4acc182f71a4a1142a920b889950de9c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 7.3182
+      value: 7.318207
       objectReference: {fileID: 0}
     - target: {fileID: 2084295443996336587, guid: 4acc182f71a4a1142a920b889950de9c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -76.9674
+      value: -76.96741
       objectReference: {fileID: 0}
     - target: {fileID: 2084295444370069280, guid: 4acc182f71a4a1142a920b889950de9c, type: 3}
       propertyPath: m_Color.a

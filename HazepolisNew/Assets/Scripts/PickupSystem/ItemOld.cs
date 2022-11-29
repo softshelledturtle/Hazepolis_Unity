@@ -5,7 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : MonoBehaviour
+public class ItemOld : MonoBehaviour
 {
     [field: SerializeField]
     public ItemSO InventoryItem { get; set; }
@@ -45,4 +45,5 @@ public class Item : MonoBehaviour
         }
         Destroy(gameObject);
     }
+
 }

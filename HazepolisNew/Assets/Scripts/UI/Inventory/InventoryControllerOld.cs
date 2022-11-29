@@ -8,7 +8,7 @@ using UnityEngine;
 namespace Inventory
 {
 
-    public class InventoryController : MonoBehaviour
+    public class InventoryControllerOld : MonoBehaviour
     {
         [SerializeField]
         private UIInventoryPage inventoryUI;

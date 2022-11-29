@@ -43,11 +43,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5128906388152386087}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dacb9033420088c45aa678d1ad10d0c2, type: 3}
+  m_Script: {fileID: 11500000, guid: be4675bd073c13c4bb5294ce40f0cef4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisItem: {fileID: 11400000, guid: e040c59653e674a46a1689d2fa207203, type: 2}
-  playerInventory: {fileID: 11400000, guid: 7b2fb4a05c986034da214fcc56ff5556, type: 2}
+  <InventoryItem>k__BackingField: {fileID: 11400000, guid: 23a6b73e0ecbcee4cb33afd9e681eb9d, type: 2}
+  <Quantity>k__BackingField: 1
+  audioSource: {fileID: 0}
+  duration: 0.3
 --- !u!50 &4084342227272435093
 Rigidbody2D:
   serializedVersion: 4

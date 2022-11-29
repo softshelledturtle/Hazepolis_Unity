@@ -225,17 +225,17 @@ public class Eammon : MonoBehaviour
         gameObject.GetComponent<FollowingPlayer>().positionList.Clear();
     }
 
-    public void GoGathring()
-    {
-        if (quest.isActive)
-        {
-            if (quest.goal.isReached())
-            {
-                gold += quest.goldReward;
-                quest.Complete();
-            }
-        }
-    }
+    //public void GoGathring()
+    //{
+    //    if (quest.isActive)
+    //    {
+    //        if (quest.goal.isReached())
+    //        {
+    //            gold += quest.goldReward;
+    //            quest.Complete();
+    //        }
+    //    }
+    //}
 }
 
 
