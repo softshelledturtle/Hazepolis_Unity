@@ -8,7 +8,7 @@ public class ItemDatabase : MonoBehaviour
     public static ItemDatabase Instance { get; set; }
     public List<Item> Items { get; set; }
 
-    private void Awake()
+    void Awake()
     {
         if (Instance != null && Instance != this)
             Destroy(gameObject);
@@ -20,7 +20,7 @@ public class ItemDatabase : MonoBehaviour
     private void BuildDatabase()
     {
         Items = JsonConvert.DeserializeObject<List<Item>>(Resources.Load<TextAsset>("JSON/Items").ToString());
-        Debug.Log(Items[0].ItemName);
+        Debug.Log("Database Ready");
     }
 
     public Item GetItem(string itemSlug)
@@ -29,6 +29,7 @@ public class ItemDatabase : MonoBehaviour
         {
             if(item.ObjectSlug == itemSlug)
             {
+                Debug.Log("¤w§ä¨ì" + itemSlug);
                 return item;
             }
         }

@@ -10,10 +10,10 @@ public class InventoryUIItem : MonoBehaviour
     public void SetItem(Item item)
     {
         this.item = item;
-        SetupItemValue();
+        SetupItemValues();
     }
 
-    void SetupItemValue()
+    void SetupItemValues()
     {
         this.transform.Find("Item_Name").GetComponent<Text>().text = item.ItemName;
     }

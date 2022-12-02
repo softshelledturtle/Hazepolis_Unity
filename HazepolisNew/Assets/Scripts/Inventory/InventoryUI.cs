@@ -13,6 +13,7 @@ public class InventoryUI : MonoBehaviour
     void Start()
     {
         itemContainer = Resources.Load<InventoryUIItem>("UI/Item_Container");
+        Debug.Log(itemContainer.transform.name);
         UIEventHandler.OnItemAddedToInventory += ItemAdded;
         inventoryPanel.gameObject.SetActive(false);
     }
@@ -28,6 +29,7 @@ public class InventoryUI : MonoBehaviour
     public void ItemAdded(Item item)
     {
         InventoryUIItem emptyItem = Instantiate(itemContainer);
+        Debug.Log(emptyItem.name);
         emptyItem.SetItem(item);
         emptyItem.transform.SetParent(scrollViewContent);
     }

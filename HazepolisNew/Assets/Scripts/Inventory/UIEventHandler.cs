@@ -9,7 +9,11 @@ public class UIEventHandler : MonoBehaviour
 
     public static void ItemAddedToInventory(Item item)
     {
-        if (OnItemAddedToInventory != null)
-            OnItemAddedToInventory(item);
+        //if (OnItemAddedToInventory != null)
+        //{
+        //    OnItemAddedToInventory(item);
+        //    Debug.Log("add to inventory" + item.ItemName);
+        //}
+        OnItemAddedToInventory?.Invoke(item);
     }
 }

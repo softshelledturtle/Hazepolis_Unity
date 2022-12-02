@@ -8,7 +8,7 @@ public class InventoryController : MonoBehaviour
     public static InventoryController Instance { get; set; }
     public ConsumableController consumableController;
     public InventoryUIDetails inventoryUIDetailsPanel;
-    public List<Item> playerItem = new List<Item>();
+    public List<Item> playerItems = new List<Item>();
 
     private void Start()
     {
@@ -24,9 +24,9 @@ public class InventoryController : MonoBehaviour
     public void GiveItem(string itemSlug)
     {
         Item item = ItemDatabase.Instance.GetItem(itemSlug);
-        playerItem.Add(item);
-        Debug.Log(playerItem.Count + "items in inventory. Add:" + itemSlug);
-        UIEventHandler.ItemAddedToInventory(item);
+        playerItems.Add(item);
+        Debug.Log(playerItems.Count + "items in inventory. Add:" + itemSlug);
+        UIEventHandler.ItemAddedToInventory(item); //ERROR
     }
 
 
