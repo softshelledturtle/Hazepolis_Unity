@@ -20,7 +20,6 @@ GameObject:
   - component: {fileID: 1431197748160736473}
   - component: {fileID: 1484271927226740721}
   - component: {fileID: 6508653890161544909}
-  - component: {fileID: 6377891467649008324}
   m_Layer: 9
   m_Name: Eammon
   m_TagString: Player
@@ -215,15 +214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scenePassWord: 
-  quest:
-    isActive: 0
-    title: 
-    description: 
-    goldReward: 0
-    goal:
-      goalType: 0
-      requiredAmount: 0
-      currentAmount: 0
+  quest: {fileID: 0}
   health: 100
   gold: 100
   walkForce: 25
@@ -358,16 +349,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &6377891467649008324
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5756310119357985415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6824315f68de51747a66a63fd05a4a9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventoryData: {fileID: 11400000, guid: a6bf2c76bb29afc419ea9b8c3e74f0c0, type: 2}
