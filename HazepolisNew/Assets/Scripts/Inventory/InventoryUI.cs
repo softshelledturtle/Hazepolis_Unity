@@ -13,7 +13,6 @@ public class InventoryUI : MonoBehaviour
     void Awake()
     {
         itemContainer = Resources.Load<InventoryUIItem>("UI/Item_Container");
-        Debug.Log(itemContainer.transform.name);
         UIEventHandler.OnItemAddedToInventory += ItemAdded;
         inventoryPanel.gameObject.SetActive(false);
     }
