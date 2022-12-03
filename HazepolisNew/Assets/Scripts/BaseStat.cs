@@ -1,13 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
-public class BaseStat : MonoBehaviour
+public class BaseStat
 {
+    public enum BaseStatType {Sanity} 
+
     public List<StatBonus> BaseAdditives { get; set; }
+    [JsonConverter(typeof(StringEnumConverter))]
+    public BaseStatType StatType { get; set; }
     public int BaseValue { get; set; }
     public string StatName { get; set; }
-    public string statDescription { get; set; }
+    public string StatDescription { get; set; }
     public int FinalValue { get; set; }
 
     public BaseStat(int baseValue, string statName, string statDescription)
@@ -15,13 +22,14 @@ public class BaseStat : MonoBehaviour
         this.BaseAdditives = new List<StatBonus>();
         this.BaseValue = baseValue;
         this.StatName = statName;
-        this.statDescription = statDescription;
+        this.StatDescription = statDescription;
     }
 
     [Newtonsoft.Json.JsonConstructor]
-    public BaseStat(int baseValue, string statName)
+    public BaseStat(BaseStatType statType, int baseValue, string statName)
     {
         this.BaseAdditives = new List<StatBonus>();
+        this.StatType = statType;
         this.BaseValue = baseValue;
         this.StatName = statName;
     }
@@ -38,8 +46,9 @@ public class BaseStat : MonoBehaviour
 
     public int GetCalculatedStatValue()
     {
+        this.FinalValue = 0;
         this.BaseAdditives.ForEach(x => this.FinalValue += x.BonusValue);
-        FinalValue += BaseValue;
+        this.FinalValue += BaseValue;
         return FinalValue;
     }
 }

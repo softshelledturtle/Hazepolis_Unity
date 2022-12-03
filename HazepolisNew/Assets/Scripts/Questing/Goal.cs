@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Goal 
 {
+    public Quest Quest { get; set; }
     public string Description { get; set; }
     public bool Completed { get; set; }
-    public int CurrenAmount { get; set; }
+    public int CurrentAmount { get; set; }
     public int RequiredAmount { get; set; }
 
     public virtual void Init()
@@ -15,7 +16,7 @@ public class Goal
     }
     public void Evaluate()
     {
-        if (CurrenAmount >= RequiredAmount)
+        if (CurrentAmount >= RequiredAmount)
         {
             Complete();
         }
@@ -23,6 +24,7 @@ public class Goal
 
     public void Complete()
     {
+        Quest.CheckGoals();
         Completed = true;
     }
 }

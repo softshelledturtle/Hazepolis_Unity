@@ -9,6 +9,7 @@ public class Quest : MonoBehaviour
     public string QuestName { get; set; }
     public string Description { get; set; }
     public Item ItemReward { get; set; }
+    public int CoinReward { get; set; }
     public bool Completed { get; set; }
 
     public void CheckGoals()
@@ -17,9 +18,9 @@ public class Quest : MonoBehaviour
         if (Completed) GiveReward();
     }
 
-    void GiveReward()
+    public void GiveReward()
     {
-        //if (ItemReward != null)
-            //InventoryController.Instance.GiveItem(ItemReward);
+        if (ItemReward != null)
+            InventoryController.Instance.GiveItem(ItemReward);
     }
 }

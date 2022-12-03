@@ -7,6 +7,7 @@ public class CoffeeLog : MonoBehaviour, IConsumable
     void IConsumable.Consume()
     {
         Debug.Log("You drink a swig of the coffee. Cafe Latte!");
+        Destroy(gameObject);
     }
 
     void IConsumable.Consume(CharacterStat stat)

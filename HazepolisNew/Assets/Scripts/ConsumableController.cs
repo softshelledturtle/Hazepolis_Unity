@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class ConsumableController : MonoBehaviour
 {
-    CharacterStat stat;
+    CharacterStat stats;
     void Start()
     {
-        stat = GetComponent<CharacterStat>();
+        stats = GetComponent<Player>().characterStats;
     }
 
     public void ConsumeItem(Item item)
@@ -15,7 +15,7 @@ public class ConsumableController : MonoBehaviour
         GameObject itemToSpawn = Instantiate(Resources.Load<GameObject>("Consumables/" + item.ObjectSlug));
         if (item.ItemModifier)
         {
-            itemToSpawn.GetComponent<IConsumable>().Consume(stat);
+            itemToSpawn.GetComponent<IConsumable>().Consume(stats);
         }
         else
             itemToSpawn.GetComponent<IConsumable>().Consume();

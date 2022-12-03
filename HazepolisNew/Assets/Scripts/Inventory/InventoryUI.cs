@@ -10,7 +10,7 @@ public class InventoryUI : MonoBehaviour
     bool menuIsActive { get; set; }
     Item currentSelectedItem { get; set; }
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         itemContainer = Resources.Load<InventoryUIItem>("UI/Item_Container");
         UIEventHandler.OnItemAddedToInventory += ItemAdded;
@@ -28,7 +28,6 @@ public class InventoryUI : MonoBehaviour
     public void ItemAdded(Item item)
     {
         InventoryUIItem emptyItem = Instantiate(itemContainer);
-        Debug.Log(emptyItem.name);
         emptyItem.SetItem(item);
         emptyItem.transform.SetParent(scrollViewContent);
         emptyItem.transform.localScale = new Vector3(1, 1, 1);

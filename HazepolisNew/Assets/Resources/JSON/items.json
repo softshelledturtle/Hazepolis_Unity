@@ -5,6 +5,13 @@
     "description": "A coffee that logs something to the console.",
     "itemType": "Consumable",
     "actionName": "Drink",
-    "itemModifier": 0
+    "itemModifier": 0,
+    "Stats": [
+      {
+        "StatType": "Sanity",
+        "BaseValue": 5,
+        "StatName": "Sanity"
+      }
+    ]
   }
 ]
