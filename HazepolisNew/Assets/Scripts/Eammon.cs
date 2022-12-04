@@ -70,7 +70,7 @@ public class Eammon : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("collision" + collision.gameObject.tag);
+        //Debug.Log("collision" + collision.gameObject.tag);
 
         if ((collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Box" || collision.gameObject.tag == "Bridge") && afterSu)
         {
@@ -225,17 +225,17 @@ public class Eammon : MonoBehaviour
         gameObject.GetComponent<FollowingPlayer>().positionList.Clear();
     }
 
-    public void GoGathring()
-    {
-        if (quest.isActive)
-        {
-            if (quest.goal.isReached())
-            {
-                gold += quest.goldReward;
-                quest.Complete();
-            }
-        }
-    }
+    //public void GoGathring()
+    //{
+    //    if (quest.isActive)
+    //    {
+    //        if (quest.goal.isReached())
+    //        {
+    //            gold += quest.goldReward;
+    //            quest.Complete();
+    //        }
+    //    }
+    //}
 }
 
 
