@@ -6,14 +6,19 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    public RectTransform TitleMenuCanvas;
     public GameObject pauseMenu;
     public bool IsShow;
 
      void Start()
     {
+
         pauseMenu.SetActive(false);
         IsShow = false;
         Time.timeScale = (1);
+
+        //標題畫面動畫
+        TitleAnimation();
     }
 
     void Update()
@@ -36,7 +41,7 @@ public class Menu : MonoBehaviour
         Debug.Log("按下'開始'按鈕");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
-    
+
     public void QuitGame()
     {
         Application.Quit();
@@ -63,6 +68,13 @@ public class Menu : MonoBehaviour
         pauseMenu.SetActive(false);
         IsShow = false;
         Time.timeScale = 1f;
+    }
+
+    public void TitleAnimation()
+    {
+        LeanTween.move(TitleMenuCanvas, new Vector3(48f, 0f, 0f), 1f).setDelay(.4f);
+		LeanTween.alpha(TitleMenuCanvas, 2f, 5f ).setFrom(0f).setDelay(.5f).setEase(LeanTweenType.easeOutQuad);
+
     }
 
 }
