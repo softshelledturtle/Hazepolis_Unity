@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-   public virtual void Interact()
+    private bool hasInteracted;
+
+    public virtual void Interact()
     {
         Debug.Log("Interacting with base class.");
     }

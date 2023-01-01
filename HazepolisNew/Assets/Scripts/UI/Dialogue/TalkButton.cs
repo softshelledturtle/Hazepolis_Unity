@@ -25,8 +25,8 @@ public class TalkButton : MonoBehaviour
     {
         if (Button.activeSelf && Input.GetKeyDown(KeyCode.T))
         {
-            DialogUI.SetActive(true);
-            trigger.StartDialog();
+            //DialogUI.SetActive(true);
+            //trigger.StartDialog();
             Debug.Log("Conversation");
             if (this.tag == "Interactable")
             {
