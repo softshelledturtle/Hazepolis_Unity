@@ -70,10 +70,10 @@ public class Menu : MonoBehaviour
         Time.timeScale = 1f;
     }
 
-  //  public void TitleAnimation()
-  //  {
-  //      LeanTween.move(TitleMenuCanvas, new Vector3(48f, 0f, 0f), 1f).setDelay(.4f);
-  //      LeanTween.alpha(TitleMenuCanvas, 2f, 5f ).setFrom(0f).setDelay(.5f).setEase(LeanTweenType.easeOutQuad);
-  //  }
+        //  public void TitleAnimation()
+        //  {
+        //      LeanTween.move(TitleMenuCanvas, new Vector3(48f, 0f, 0f), 1f).setDelay(.4f);
+        //      LeanTween.alpha(TitleMenuCanvas, 2f, 5f ).setFrom(0f).setDelay(.5f).setEase(LeanTweenType.easeOutQuad);
+        //  }
 
-}
+    }
