@@ -9,7 +9,8 @@ public class CharacterController2D : MonoBehaviour
 
 	public GameObject[] MainPlayer;
 	private GameObject currentPlayer, previousPlayer;
-	public bool foundDan = false; 
+	public bool foundDan = false;
+	public float threshold = 0.1f; // 滾輪速度閾值
 
 	[SerializeField] private int iCharcaterCount = 0;
 	public Camera cam;
@@ -71,56 +72,82 @@ public class CharacterController2D : MonoBehaviour
 
 	void MagicDetect()
 	{
-        Vector3 mousePos = Input.mousePosition;
-		mousePos.z = -1.35f;
-		
-		Vector3 objectPos = cam.WorldToScreenPoint(transform.position);
-		mousePos.x = mousePos.x - objectPos.x;
-		mousePos.y = mousePos.y - objectPos.y;
+		int layerMask = 1 << LayerMask.NameToLayer("Interactive");
+		var worldPoint = GetMouseWorldPoint();
+		RaycastHit2D hit = Physics2D.Raycast(worldPoint, Vector2.zero, Mathf.Infinity, layerMask);
+        //DegugDraw3Axis(worldPoint);
 
-		float angle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
-		transform.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
+		if (Input.GetKey(KeyCode.E) && hit.collider != null)
+		{
+			String activeObj = hit.transform.name;
+			GameObject hitObj = GameObject.Find(activeObj);
+			//Debug.Log("hit.collider.name:" + hit.collider.name);
 
-		RaycastHit2D objHit = Physics2D.Raycast(transform.position, transform.right, 10, 1 << LayerMask.NameToLayer("Interactive"));
-		Debug.DrawRay(transform.position, transform.right * 10, Color.red);
+			if (iCharcaterCount == 0)
+			{
+                if (hitObj.GetComponent<ObjectController>().isFlowable)
+                {
+					//TimeControl
+					float scroll = Input.GetAxis("Mouse ScrollWheel");
 
-		if (Input.GetKey(KeyCode.E) && objHit.collider != null)
-        {
-			String activeObj = objHit.transform.name;
-			Debug.DrawRay(transform.position, transform.right * 10, Color.red);
+					if (Mathf.Abs(scroll) >= threshold)
+					{
+						Debug.Log(scroll);
+						currentPlayer.gameObject.SendMessage("MagicTimeReverseSpeedUp"); //跑動畫
+						hitObj.SendMessage("ControlTime", scroll); //傳至ObjectController
+					}
 
-			if(iCharcaterCount == 0)
-            {
-				//TimeControl
-				if (Input.mouseScrollDelta.y != 0)
-				{
-					currentPlayer.gameObject.SendMessage("MagicTimeReverseSpeedUp");
-					float mouseScr = Input.mouseScrollDelta.y;
-					Debug.Log(activeObj);
-					GameObject.Find(activeObj).SendMessage("ControlTime", mouseScr);
-				}
-				//TimePause
-				if (Input.GetMouseButtonDown(1))
-				{
-					currentPlayer.gameObject.SendMessage("MagicTimeStop");
-					GameObject.Find(activeObj).SendMessage("PauseTime");
+					//TimePause
+					if (Input.GetMouseButtonDown(1))
+					{
+						Debug.Log("hit.collider.name:" + hit.collider.name + "PauseTime");
+						currentPlayer.gameObject.SendMessage("MagicTimeStop"); //跑動畫
+						hitObj.SendMessage("PauseTime"); //傳至ObjectController
+					}
 				}
 			}
 
-			if(iCharcaterCount == 1)
-            {
-				if (Input.GetMouseButtonDown(0))
+			if (iCharcaterCount == 1)
+			{
+				if (hitObj.GetComponent<ObjectController>().isDragable)
 				{
-					currentPlayer.gameObject.SendMessage("Magic");
-					//GameObject.Find(activeObj).SendMessage("ObjectDrag");
+					if (Input.GetMouseButtonDown(0)) //跑動畫
+					{
+						currentPlayer.gameObject.SendMessage("Magic");
+						Debug.Log("hit.collider.name:" + hit.collider.name + "Drag");
+					}
+					if (Input.GetMouseButton(0))
+					{
+						StartCoroutine(Drag(hit.collider));
+					}
 				}
-				if (Input.GetMouseButton(0))
-				{
-					GameObject.Find(activeObj).SendMessage("ObjectDrag");
-				}
-			}	
-		}	
+			}
+		}
+		
 	}
+
+	Vector3 GetMouseWorldPoint()
+	{
+		var mousePosition = Input.mousePosition;
+		mousePosition.z = -cam.transform.position.z;
+		var worldPoint = cam.ScreenToWorldPoint(mousePosition);
+		return worldPoint;
+	}
+	IEnumerator Drag(Collider2D collider)
+	{
+		var obj = collider.gameObject;
+		var dragPoint = obj.transform.position;
+		var beginMousePoint = GetMouseWorldPoint();
+
+		while (Input.GetMouseButton(0))
+		{
+			var worldPoint = GetMouseWorldPoint();
+			obj.transform.position = dragPoint - beginMousePoint + worldPoint;
+
+			yield return null;
+		}
+	}
+	
 }
 
 
