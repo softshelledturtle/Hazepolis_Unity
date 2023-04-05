@@ -11,9 +11,9 @@ public class Eammon : MonoBehaviour
     //change scene
     public string scenePassWord;
     //QuestSystem
-    public Quest quest;
-    public int health = 100;
-    public int gold = 100;
+    //public Quest quest;
+    //public int health = 100;
+    //public int gold = 100;
 
     private SkeletonAnimation skeletonAnimation;
     private string previousState, currentState ;
