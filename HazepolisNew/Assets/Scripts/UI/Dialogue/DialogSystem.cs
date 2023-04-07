@@ -2,16 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
-
 public class DialogSystem : MonoBehaviour
 {
     [Header("UI組件")]
-    public TextMeshProUGUI textLabel;
+    public Text textLabel;
     public Image faceImage;
 
 
-    [Header("文本文件")]
+    [Header("文本文件(index為文本行數，不包含單行A,B)")]
     public TextAsset textFile;
     public int index;
     public float textSpeed;
@@ -23,6 +21,8 @@ public class DialogSystem : MonoBehaviour
     bool textFinished;  //文本是否跑完
     bool isTyping;  //是否在逐字顯示
 
+    public RectTransform backgroundBox;
+    public static bool isActive = false;
 
     List<string> textList = new List<string>();
 
@@ -37,24 +37,32 @@ public class DialogSystem : MonoBehaviour
         textFinished = true;    //對話框每次隱藏變為顯示狀態變為文本已結束
         StartCoroutine(setTextUI());
     }
-
+    private void Start()
+    {
+       // backgroundBox.transform.localScale = Vector3.one;
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.T) && index == textList.Count)
         {
+            backgroundBox.LeanScale(Vector3.one, 0.3f).setEaseInOutExpo();
             gameObject.SetActive(false);
             return;
         }
 
-        //按下F鍵，當前行文本完成就執行協程，當前行文本未完成就直接顯示當前行文本
-        if (Input.GetKeyDown(KeyCode.F))
+        //按下T鍵，當前行文本完成就執行協程，當前行文本未完成就直接顯示當前行文本
+        if (Input.GetKeyDown(KeyCode.T))
         {
             if (textFinished)
             {
+              //backgroundBox.LeanScale(Vector3.zero, 0.3f).setEaseInOutExpo();
+              //isActive = false;
+
                 StartCoroutine(setTextUI());
             }
             else if (!textFinished)
             {
+                
                 isTyping = false;
             }
         }
@@ -77,6 +85,7 @@ public class DialogSystem : MonoBehaviour
         foreach (var line in lineData)
         {
             textList.Add(line);
+            isActive = false;
         }
     }
 
