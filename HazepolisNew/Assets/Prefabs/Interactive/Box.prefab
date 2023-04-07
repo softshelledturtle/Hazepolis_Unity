@@ -98,7 +98,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 3.3200169
+  m_Mass: 3.3200164
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -145,6 +145,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09bbc5f36de0d5841a52837ee9b690e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDragable: 0
+  isFlowable: 0
+  isChangDirection: 0
+  directionMultiplier: 1
+  predirection: 0
+  speedMultiplier: 1
 --- !u!95 &-8862152138540952337
 Animator:
   serializedVersion: 3
