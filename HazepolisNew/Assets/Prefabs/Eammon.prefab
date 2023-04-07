@@ -60,9 +60,9 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5480eb3fb648ea9418c5cc6534386002, type: 2}
-  - {fileID: 2100000, guid: 167eee89dbebcaa499e8c60c7265bf0a, type: 2}
-  - {fileID: 2100000, guid: 5480eb3fb648ea9418c5cc6534386002, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -214,9 +214,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scenePassWord: 
-  quest: {fileID: 0}
-  health: 100
-  gold: 100
   walkForce: 25
   maxWalkForce: 6
   isClimbling: 0
