@@ -94,10 +94,9 @@ GameObject:
   - component: {fileID: 497524095652508369}
   - component: {fileID: 482281430}
   - component: {fileID: 482281427}
-  - component: {fileID: 482281428}
-  - component: {fileID: 482281432}
+  - component: {fileID: 1745389948}
   m_Layer: 0
-  m_Name: NPC6
+  m_Name: NPCTest
   m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -158,7 +157,7 @@ SpriteRenderer:
   m_SortingLayerID: 1472004553
   m_SortingLayer: 2
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: ef2e86216e88a9943b3bba714a0d0d17, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -166,7 +165,7 @@ SpriteRenderer:
   m_Size: {x: 8.72, y: 13.35}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &482281430
@@ -209,8 +208,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Button: {fileID: 5084864336495548866}
   DialogUI: {fileID: 0}
-  trigger: {fileID: 482281428}
---- !u!114 &482281428
+  trigger: {fileID: 0}
+--- !u!114 &1745389948
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -219,30 +218,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5657896760050597750}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 785eab10f9ff8ce4e86030433db2b461, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  messages:
-  - npcId: 0
-    message: TEST
-  npcs:
-  - name: Matt
-    sprite: {fileID: 21300000, guid: 73b9caace429023469f930ffd61edbdc, type: 3}
---- !u!114 &482281432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5657896760050597750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 982caefc1ee9a3f46a3af785eb62f4b1, type: 3}
+  m_Script: {fileID: 11500000, guid: 23fbcf779c767064b8247f875701a097, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - HI
-  - its test
-  name: testNPC
-  quests: {fileID: 0}
-  questType: Coffeeholic
+  - Test
+  - Test1
+  - Test2
+  name: TEstNPC

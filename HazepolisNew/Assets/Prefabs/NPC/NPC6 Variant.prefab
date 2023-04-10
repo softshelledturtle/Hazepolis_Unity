@@ -11,6 +11,14 @@ PrefabInstance:
       propertyPath: m_Text
       value: "\u5546\u4EBA"
       objectReference: {fileID: 0}
+    - target: {fileID: 1102380468982092511, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ef2e86216e88a9943b3bba714a0d0d17, type: 3}
+    - target: {fileID: 1102380468982092511, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5129351026775105400, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
       propertyPath: m_Name
       value: NPC6 Variant
