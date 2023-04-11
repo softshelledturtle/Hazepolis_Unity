@@ -23,4 +23,32 @@ public class Quest : MonoBehaviour
         if (ItemReward != null)
             InventoryController.Instance.GiveItem(ItemReward);
     }
+
+    //public class QuestTask
+    //{
+    //    //¥ô°Èª¬ºA¬d¸ß
+    //    public QuestData_SO questData;
+    //    public bool IsStarted
+    //    {
+    //        get { return questData.isStarted; }
+    //        set { questData.isStarted = value; }
+    //    }
+
+    //    public bool IsComplete
+    //    {
+    //        get { return questData.isComplete; }
+    //        set { questData.isComplete = value; }
+    //    }
+
+    //    public bool IsFinished
+    //    {
+    //        get { return questData.isFinished; }
+    //        set { questData.isFinished = value; }
+    //    }
+
+    //}
+
+
+
+
 }

@@ -13,16 +13,23 @@ public class QuestData_SO : ScriptableObject
 		public int currentAmount;
 	}
 
-
+	[TextArea]
 	public string questName;
 	[TextArea]
 	public string description;
+	[TextArea]
+	public string require;
+	[TextArea]
+	public string reward;
+	[TextArea]
+	public string questBtnName;
 
 	//需要三種任務完成的狀態，npc才會有不同的反應
 	public bool isStarted;
 	public bool isComplete;
-	public bool isFinised;
+	public bool isFinished;
 
-	public List<QuestRequire> questRequires = new List<QuestRequire>();
+	//public List<QuestRequire> questRequires = new List<QuestRequire>();
+	//public List<InventoryUIItem> rewards = new List<InventoryUIItem>();
 
 }

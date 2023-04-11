@@ -9,6 +9,7 @@ public class Goal
     public bool Completed { get; set; }
     public int CurrentAmount { get; set; }
     public int RequiredAmount { get; set; }
+    public object questData { get; internal set; }
 
     public virtual void Init()
     {
