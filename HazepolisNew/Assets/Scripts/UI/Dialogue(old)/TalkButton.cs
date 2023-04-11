@@ -7,7 +7,6 @@ public class TalkButton : MonoBehaviour
 {
     public GameObject Button;
     public GameObject DialogUI;
-    public DialogTrigger trigger;
 
     //靠近NpC顯示對話符號
     private void OnTriggerEnter2D(Collider2D other)

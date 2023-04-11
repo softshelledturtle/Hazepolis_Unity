@@ -27,4 +27,5 @@ public class Goal
         Quest.CheckGoals();
         Completed = true;
     }
+
 }
