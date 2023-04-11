@@ -18,7 +18,7 @@ public class QuestData_SO : ScriptableObject
 	[TextArea]
 	public string description;
 
-	//需要三种任?完成的??，npc才?有不同的反?
+	//需要三種任務完成的狀態，npc才會有不同的反應
 	public bool isStarted;
 	public bool isComplete;
 	public bool isFinised;
