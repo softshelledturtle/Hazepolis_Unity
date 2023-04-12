@@ -3225,7 +3225,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770905387}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7999999, y: -0.7000015, z: -11.35}
+  m_LocalPosition: {x: 0.79999983, y: -0.7000015, z: -11.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1174438093}
@@ -10953,6 +10953,10 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 468d6029258a2ad49ade7f5b95e76907, type: 2}
+    - target: {fileID: 4277595389830641466, guid: 1f2575b5feeea7540a192c102e242a77, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2fa9775f243dc1341bb43ee662b5ef58, type: 2}
     - target: {fileID: 4277595389830641470, guid: 1f2575b5feeea7540a192c102e242a77, type: 3}
       propertyPath: m_Name
       value: Dan
@@ -12373,7 +12377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea165e7c52e24fb438110b965e82e92f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entrancePassword: Level0-1
+  entrancePassword: gate
 --- !u!1 &5480522648396694901
 GameObject:
   m_ObjectHideFlags: 0

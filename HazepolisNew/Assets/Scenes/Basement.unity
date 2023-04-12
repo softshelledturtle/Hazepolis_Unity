@@ -965,7 +965,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.79999983, y: 23.340002, z: -10}
+  m_LocalPosition: {x: 2.6800041, y: -0.69226503, z: -9.140001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2013590434}
@@ -2574,6 +2574,14 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 468d6029258a2ad49ade7f5b95e76907, type: 2}
+    - target: {fileID: 4277595389830641466, guid: 1f2575b5feeea7540a192c102e242a77, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2fa9775f243dc1341bb43ee662b5ef58, type: 2}
+    - target: {fileID: 4277595389830641467, guid: 1f2575b5feeea7540a192c102e242a77, type: 3}
+      propertyPath: skeletonDataAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 40133952dfdd18a469c82815d39dbf43, type: 2}
     - target: {fileID: 4277595389830641470, guid: 1f2575b5feeea7540a192c102e242a77, type: 3}
       propertyPath: m_Name
       value: Dan

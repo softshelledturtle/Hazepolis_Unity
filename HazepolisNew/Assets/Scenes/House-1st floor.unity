@@ -2283,7 +2283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Level0-Bridge
-  newScenePassword: Level0-0
+  newScenePassword: bridge
 --- !u!61 &1008131698
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2791,6 +2791,10 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 468d6029258a2ad49ade7f5b95e76907, type: 2}
+    - target: {fileID: 4277595389830641466, guid: 1f2575b5feeea7540a192c102e242a77, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2fa9775f243dc1341bb43ee662b5ef58, type: 2}
     - target: {fileID: 4277595389830641470, guid: 1f2575b5feeea7540a192c102e242a77, type: 3}
       propertyPath: m_Name
       value: Dan
