@@ -61,4 +61,5 @@ public class DialogueSystem : MonoBehaviour
             dialoguePanel.SetActive(false);
         }
     }
+
 }
