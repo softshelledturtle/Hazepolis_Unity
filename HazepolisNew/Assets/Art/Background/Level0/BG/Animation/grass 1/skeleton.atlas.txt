@@ -1,0 +1,9 @@
+skeleton.png
+size:473,477
+filter:Linear,Linear
+pma:true
+草地測試all8
+bounds:0,217,473,260
+草地測試all9
+bounds:0,0,473,215
+offsets:0,0,473,260

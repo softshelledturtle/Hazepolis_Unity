@@ -1,0 +1,15 @@
+skeleton.png
+size:384,156
+filter:Linear,Linear
+pma:true
+空7
+bounds:297,86,70,87
+offsets:9,5,85,100
+rotate:90
+空8
+bounds:297,1,69,83
+offsets:9,7,85,100
+空9
+bounds:0,0,156,295
+offsets:18,13,177,321
+rotate:90
