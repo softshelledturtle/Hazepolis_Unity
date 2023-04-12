@@ -166,7 +166,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Button: {fileID: 2919287984435191102}
   DialogUI: {fileID: 0}
-  trigger: {fileID: 0}
 --- !u!114 &2919287984310615948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,7 +201,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2919287984435191088
 Transform:
   m_ObjectHideFlags: 0
