@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 1.6728699, y: 3.29727, z: 1}
   m_Children: []
   m_Father: {fileID: 5756310119357985471}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1456187800
 SpriteRenderer:
@@ -124,6 +124,7 @@ Transform:
   m_LocalScale: {x: 0.285, y: 0.285, z: 0.285}
   m_Children:
   - {fileID: 2221515452337536976}
+  - {fileID: 1456187799}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -303,6 +304,7 @@ MonoBehaviour:
   walkForce: 100
   maxWalkForce: 6
   isClimbling: 0
+  foundDan: 0
   horizontalKey: 0
   verticalKey: 0
 --- !u!58 &1431197748160736473

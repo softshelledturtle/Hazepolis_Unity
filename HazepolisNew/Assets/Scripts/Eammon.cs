@@ -204,7 +204,7 @@ public class Eammon : MonoBehaviour
     public void Activate()
     {
         inputEnabled = true;
-        if(scenePassWord == "Level0-1" && Input.GetKeyDown(KeyCode.F))
+        if(scenePassWord == "gate" && Input.GetKeyDown(KeyCode.F))
         {
             foundDan = true;
         }
