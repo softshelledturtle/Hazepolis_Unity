@@ -13,5 +13,20 @@
         "StatName": "Sanity"
       }
     ]
+  },
+  {
+    "objectSlug": "key",
+    "itemName": "Old Key",
+    "description": "A key that logs something to the console.",
+    "itemType": "Consumable",
+    "actionName": "Use",
+    "itemModifier": 0,
+    "Stats": [
+      {
+        "StatType": "Sanity",
+        "BaseValue": 5,
+        "StatName": "Sanity"
+      }
+    ]
   }
 ]

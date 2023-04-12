@@ -92,7 +92,7 @@ public class CharacterController2D : MonoBehaviour
 
 					if (Mathf.Abs(scroll) >= threshold)
 					{
-						Debug.Log(scroll);
+						//Debug.Log(scroll);
 						currentPlayer.gameObject.SendMessage("MagicTimeReverseSpeedUp"); //跑動畫
 						hitObj.SendMessage("ControlTime", scroll); //傳至ObjectController
 					}

@@ -18,14 +18,14 @@ public class InventoryController : MonoBehaviour
             Instance = this;
 
         consumableController = GetComponent<ConsumableController>();
-        GiveItem("coffee_log");
+        //GiveItem("coffee_log");
     }
 
     public void GiveItem(string itemSlug)
     {
         Item item = ItemDatabase.Instance.GetItem(itemSlug);
         playerItems.Add(item);
-        Debug.Log(playerItems.Count + "items in inventory. Add:" + itemSlug);
+        Debug.Log(playerItems.Count + "items in inventory. Add: " + itemSlug);
         UIEventHandler.ItemAddedToInventory(item); 
     }
 
