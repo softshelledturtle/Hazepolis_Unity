@@ -185,6 +185,7 @@ MonoBehaviour:
   - "\u5148\u6536\u8457\u597D\u4E86"
   name: Eammon
   pickable: 1
+  itemSlug: key
   pickupItem: {fileID: 7167294662417829709, guid: 4599a0fa58277704bad004315100cb46, type: 3}
 --- !u!1 &2919287984435191102
 GameObject:

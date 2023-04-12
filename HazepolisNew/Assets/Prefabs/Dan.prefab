@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d247ba06193faa74d9335f5481b2b56c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonDataAsset: {fileID: 11400000, guid: e87d8b7350c1a244799c4c9c234a1bf6, type: 2}
+  skeletonDataAsset: {fileID: 11400000, guid: 40133952dfdd18a469c82815d39dbf43, type: 2}
   initialSkinName: 
   fixPrefabOverrideViaMeshFilter: 2
   initialFlipX: 0
@@ -172,7 +172,7 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 4277595389830641470}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 468d6029258a2ad49ade7f5b95e76907, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

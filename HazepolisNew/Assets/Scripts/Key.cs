@@ -7,7 +7,7 @@ public class Key : MonoBehaviour,IConsumable
     void IConsumable.Consume()
     {
         Debug.Log("You use a key!");
-        //Destroy(gameObject);
+        Destroy(gameObject);
     }
 
     void IConsumable.Consume(CharacterStat stat)

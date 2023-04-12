@@ -6,6 +6,7 @@ public class ShiningSpot : NPC
 {
     public DropTable DropTable { get; set; }
     public bool pickable;
+    public string itemSlug;
 
     public PickupItem pickupItem;
     private void Start()
@@ -13,7 +14,7 @@ public class ShiningSpot : NPC
         DropTable = new DropTable();
         DropTable.loot = new List<LootDrop>
         {
-            new LootDrop("key", 100),
+            new LootDrop(itemSlug, 100),
         };
     }
 
