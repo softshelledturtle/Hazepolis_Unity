@@ -8078,6 +8078,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5031339732278247177}
     m_Modifications:
+    - target: {fileID: 1162367291855803305, guid: c8bbf6309a73cbb46b1159d3df35d24e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -549.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1236371881252141058, guid: c8bbf6309a73cbb46b1159d3df35d24e, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2341781336967796276, guid: c8bbf6309a73cbb46b1159d3df35d24e, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -8142,6 +8150,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -531.4
       objectReference: {fileID: 0}
+    - target: {fileID: 7723383293996162528, guid: c8bbf6309a73cbb46b1159d3df35d24e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
     - target: {fileID: 9103221816149906033, guid: c8bbf6309a73cbb46b1159d3df35d24e, type: 3}
       propertyPath: m_Name
       value: Wall_Bridge
