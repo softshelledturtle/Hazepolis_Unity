@@ -14,6 +14,7 @@ public class ItemDatabase : MonoBehaviour
             Destroy(gameObject);
         else
             Instance = this;
+        DontDestroyOnLoad(gameObject);
         BuildDatabase();
     }
 
@@ -29,7 +30,7 @@ public class ItemDatabase : MonoBehaviour
         {
             if(item.ObjectSlug == itemSlug)
             {
-                Debug.Log("已找到" + itemSlug);
+                Debug.Log("ItemDatabase已找到" + itemSlug);
                 return item;
             }
         }
