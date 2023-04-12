@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:HazepolisNew/Assets/Art/Background/Level0/BG/Animation.meta
 guid: 325653c055a6ba54e84acfa8e1c5e523
+========
+guid: c94262afcd42b1148961c93e732076ba
+>>>>>>>> pr/33:HazepolisNew/Assets/Art/Character/Dan.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
