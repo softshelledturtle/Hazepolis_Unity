@@ -27,7 +27,7 @@ public class Eammon : MonoBehaviour
     private bool isJumping = false;
     public bool isClimbling = false;
     private bool afterSu = false;
-    private bool foundDan = false;
+    public bool foundDan = false;
     public int horizontalKey;
     public int verticalKey;
 

@@ -24,7 +24,7 @@ public class CharacterController2D : MonoBehaviour
 	void CheckMeet()
     {
 		currentPlayer = MainPlayer[0];
-		if (Eammon.instance.scenePassWord == "Level0-1")
+		if (Eammon.instance.scenePassWord == "gate")
 		{
 			foundDan = true;
 		}
