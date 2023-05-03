@@ -1065,7 +1065,7 @@ Camera:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -1284,17 +1284,49 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 3.605416
       objectReference: {fileID: 0}
+    - target: {fileID: 2031136843078500572, guid: c1896802adf781641a99f61549899c75, type: 3}
+      propertyPath: m_Size.x
+      value: 2.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031136843078500572, guid: c1896802adf781641a99f61549899c75, type: 3}
+      propertyPath: m_Size.y
+      value: 1.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031136843078500572, guid: c1896802adf781641a99f61549899c75, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2055517220584348566, guid: dae09aaa0fe44b2409db002d93da10df, type: 3}
+    - target: {fileID: 2031136843078500572, guid: c1896802adf781641a99f61549899c75, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031136843078500572, guid: c1896802adf781641a99f61549899c75, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031136843078500572, guid: c1896802adf781641a99f61549899c75, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d4f222aa68566d649a1cc687484d8f7b, type: 2}
     - target: {fileID: 2031136843078500573, guid: c1896802adf781641a99f61549899c75, type: 3}
       propertyPath: m_Name
       value: Box
       objectReference: {fileID: 0}
     - target: {fileID: 2031136843078500574, guid: c1896802adf781641a99f61549899c75, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 2.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031136843078500574, guid: c1896802adf781641a99f61549899c75, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031136843078500574, guid: c1896802adf781641a99f61549899c75, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 2.01
+      value: 2.71
       objectReference: {fileID: 0}
     - target: {fileID: 2031136843078500574, guid: c1896802adf781641a99f61549899c75, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.87
+      value: 1.92
       objectReference: {fileID: 0}
     - target: {fileID: 2031136843078500575, guid: c1896802adf781641a99f61549899c75, type: 3}
       propertyPath: m_RootOrder
