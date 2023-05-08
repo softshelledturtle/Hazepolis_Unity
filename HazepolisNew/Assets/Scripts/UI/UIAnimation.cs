@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using DG.Tweening;
 public class UIAnimation : MonoBehaviour
 {
-    public RectTransform bagPanel,miniMap,hpBar,functionBar;
+    public RectTransform bagPanel,miniMap,hpBar,functionBar,pauseMenu;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +14,7 @@ public class UIAnimation : MonoBehaviour
 
     public void bagapear()
     {
-        bagPanel.DOAnchorPos(new Vector2(0, -20), 0.25f);
+        bagPanel.DOAnchorPos(new Vector2(0, 0), 0.25f);
     }    
     public void bagdisapear()
     {
