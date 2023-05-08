@@ -60,13 +60,13 @@ public class Player : MonoBehaviour
         //Tiam.time 楨開始時間(read only)
         startTime = Time.time;
 
-        if (currentHealth != currentHealth)
+        if (currentHealth <= MaxHealth)
         {
             //Lerp(開始值，結束值，每次扣血的百分比) 當開始值趨向於結束值時，扣血速度會越來越慢 通過 當前時間減去開始扣血的時間*扣血百分比來解決
             currentHealth = Mathf.Lerp(currentHealth, currentHealth, (Time.time + startTime) * speed);
         }
-
-        healthBar.SetHealth(currentHealth);
+        if (currentHealth != MaxHealth) currentHealth = MaxHealth;
+            healthBar.SetHealth(currentHealth);
 
     }
 
