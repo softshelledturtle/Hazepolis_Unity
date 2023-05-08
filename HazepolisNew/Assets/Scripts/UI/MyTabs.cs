@@ -16,18 +16,15 @@ public class MyTabs : MonoBehaviour
     public GameObject tabCont3;
     public GameObject tabCont4;
 
-    // Start is called before the first frame update
-    void Start()
+    public void Start()
+    {
+        tabCont1.SetActive(true);
+    }
+
+    public void Update()
     {
 
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void HideAllTabs()
     {
         tabCont1.SetActive(false);

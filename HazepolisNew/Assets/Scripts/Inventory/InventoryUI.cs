@@ -14,7 +14,7 @@ public class InventoryUI : MonoBehaviour
     {
         itemContainer = Resources.Load<InventoryUIItem>("UI/Item_Container");
         UIEventHandler.OnItemAddedToInventory += ItemAdded;
-        inventoryPanel.gameObject.SetActive(false);
+        inventoryPanel.gameObject.SetActive(true);
     }
 
     private void Update()
