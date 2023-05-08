@@ -31,6 +31,7 @@ public class QuestNameButton : MonoBehaviour
         questContentText.text = currentData.Description;
         questNameText.text = currentData.QuestName;
         questBtnName.text = currentData.QuestName;
+
         questReward.text = currentData.QuestReward;
         questRequirement.text = currentData.QuestRequire;
         //QuestUI.Instance.SetupRequireList(currentData);

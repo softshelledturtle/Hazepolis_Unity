@@ -28,6 +28,7 @@ public class InventoryUI : MonoBehaviour
     public void ItemAdded(Item item)
     {
         InventoryUIItem emptyItem = Instantiate(itemContainer);
+
         emptyItem.SetItem(item);
         emptyItem.transform.SetParent(scrollViewContent);
         emptyItem.transform.localScale = new Vector3(1, 1, 1);

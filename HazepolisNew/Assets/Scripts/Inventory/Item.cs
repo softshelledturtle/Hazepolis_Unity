@@ -10,6 +10,7 @@ public class Item
     public List<BaseStat> Stats { get; set; }
     public string ObjectSlug { get; set; }
     public string Description { get; set; }
+
     [JsonConverter(typeof(Newtonsoft.Json.Converters.StringEnumConverter))]
     public ItemTypes ItemType { get; set; }
     public string ActionName { get; set; }
