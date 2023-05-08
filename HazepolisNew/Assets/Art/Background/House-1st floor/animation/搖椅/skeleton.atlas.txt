@@ -1,0 +1,6 @@
+skeleton.png
+size:273,290
+filter:Linear,Linear
+pma:true
+搖椅
+bounds:0,0,273,290

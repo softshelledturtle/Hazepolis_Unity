@@ -1,0 +1,7 @@
+skeleton.png
+size:371,466
+filter:Linear,Linear
+pma:true
+標語1
+bounds:0,0,371,466
+offsets:28,6,429,512
