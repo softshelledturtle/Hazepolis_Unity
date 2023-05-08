@@ -6,8 +6,12 @@ using System.Linq;
 public class Quest : MonoBehaviour
 {
     public List<Goal> Goals { get; set; } = new List<Goal>();
+
     public string QuestName { get; set; }
+    public string QuestReward { get; set; }
+    public string QuestRequire { get; set; }
     public string Description { get; set; }
+
     public Item ItemReward { get; set; }
     public int CoinReward { get; set; }
     public bool Completed { get; set; }

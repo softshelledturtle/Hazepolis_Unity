@@ -7,19 +7,19 @@ public class QuestNameButton : MonoBehaviour
 {
     public Text questNameText;
     public Text questBtnName;
-    public QuestData_SO currentData;
+    public Quest currentData;
     public Text questContentText;
     public Text questRequirement;
     public Text questReward;
 
-    public void SetupNameButton(QuestData_SO quesData)
+    public void SetupNameButton(Quest  quesData)
     {
         currentData = quesData;
 
-        if (quesData.isComplete)
-            questNameText.text = quesData.questName + "(完成)";
-        else
-            questNameText.text = quesData.questName;
+        //if (quesData.isComplete)
+            questNameText.text = quesData.QuestName + "(完成)";
+        //else
+            questNameText.text = quesData.QuestName;
     }
 
     private void Awake()
@@ -28,11 +28,12 @@ public class QuestNameButton : MonoBehaviour
     }
     void UpdateQuestContent()
     {
-        questContentText.text = currentData.description;
-        questNameText.text = currentData.questName;
-        questBtnName.text = currentData.questBtnName;
-        questReward.text = currentData.reward;
-        questRequirement.text = currentData.require;
+        questContentText.text = currentData.Description;
+        questNameText.text = currentData.QuestName;
+        questBtnName.text = currentData.QuestName;
+
+        questReward.text = currentData.QuestReward;
+        questRequirement.text = currentData.QuestRequire;
         //QuestUI.Instance.SetupRequireList(currentData);
 
         //foreach (Transform item in QuestUI.Instance.rewardTransform)

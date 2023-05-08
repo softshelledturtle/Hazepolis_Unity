@@ -5,6 +5,7 @@ using UnityEngine;
 public class Goal 
 {
     public Quest Quest { get; set; }
+
     public string Description { get; set; }
     public bool Completed { get; set; }
     public int CurrentAmount { get; set; }

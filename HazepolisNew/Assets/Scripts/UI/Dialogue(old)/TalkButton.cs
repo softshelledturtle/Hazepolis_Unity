@@ -11,14 +11,12 @@ public class TalkButton : MonoBehaviour
     //靠近NpC顯示對話符號
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Button.SetActive(true);
-        //DialogUI.SetActive(true);
+        Button.SetActive(true);//DialogUI.SetActive(true);
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        Button.SetActive(false);
-        //DialogUI.SetActive(false);
+        Button.SetActive(false);//DialogUI.SetActive(false);
     }
 
     void Update()
@@ -27,6 +25,7 @@ public class TalkButton : MonoBehaviour
         {
             DialogUI.SetActive(true);
             //trigger.StartDialog();
+
             Debug.Log("Conversation");
             if (this.tag == "Interactable")
             {

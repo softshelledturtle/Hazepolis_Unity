@@ -34,6 +34,7 @@ public class InventoryUIDetails : MonoBehaviour
         }
         this.item = item;
         itemBigImage.sprite = Resources.Load<Sprite>("UI/Icons/Items/" + item.ObjectSlug);
+
         selectedItemButton = selectedButton;
         itemNameText.text = item.ItemName;
         itemDescriptionText.text = item.Description;

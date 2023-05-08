@@ -24,6 +24,7 @@ public class InventoryController : MonoBehaviour
     public void GiveItem(string itemSlug)
     {
         Item item = ItemDatabase.Instance.GetItem(itemSlug);
+
         playerItems.Add(item);
         Debug.Log(playerItems.Count + "items in inventory. Add: " + itemSlug);
         UIEventHandler.ItemAddedToInventory(item); 
