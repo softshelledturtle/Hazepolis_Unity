@@ -49,6 +49,10 @@ public class InventoryUIDetails : MonoBehaviour
             InventoryController.Instance.ConsumeItem(item);
             Destroy(selectedItemButton.gameObject);
         }
+        if (item.ItemType == Item.ItemTypes.Quest)
+        {
+            InventoryController.Instance.UseQuestItem(item);
+        }
         item = null;
         gameObject.SetActive(false);
     }

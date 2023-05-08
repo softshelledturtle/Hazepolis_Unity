@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        characterStats = new CharacterStat(100);
+        characterStats = new CharacterStat(100,0);
 
         currentHealth = MaxHealth;
         healthBar.SetMaxHealth(MaxHealth);

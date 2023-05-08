@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class InventoryController : MonoBehaviour
 {
     public static InventoryController Instance { get; set; }
+    public PlayerPropController playerPropController;
     public ConsumableController consumableController;
     public InventoryUIDetails inventoryUIDetailsPanel;
     public List<Item> playerItems = new List<Item>();
@@ -41,13 +42,18 @@ public class InventoryController : MonoBehaviour
     {
         inventoryUIDetailsPanel.SetItem(item, selectedButton);
     }
-    public void EquiptItem()
+    public void EquipItem(Item itemToEquip)
     {
-        //PlayerWeaponController
+        playerPropController.EquipProp(itemToEquip);
     }
 
     public void ConsumeItem(Item itemToconsume)
     {
         consumableController.ConsumeItem(itemToconsume);
+    }
+
+    public void UseQuestItem(Item itemToUse)
+    {
+        Eammon.instance.KeyPassword = itemToUse.ItemName;
     }
 }

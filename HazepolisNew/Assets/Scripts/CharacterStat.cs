@@ -4,10 +4,11 @@ public class CharacterStat
 {
     public List<BaseStat> stats = new List<BaseStat>();
 
-    public CharacterStat(int sanity)
+    public CharacterStat(int sanity,int password)
     {
         stats = new List<BaseStat>() { 
-            new BaseStat(BaseStat.BaseStatType.Sanity, sanity, "Sanity")        
+            new BaseStat(BaseStat.BaseStatType.Sanity, sanity, "Sanity"),
+            new BaseStat(BaseStat.BaseStatType.PassWord, password, "Password")
         };
     }
 
