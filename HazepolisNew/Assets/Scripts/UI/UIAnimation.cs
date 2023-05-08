@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using DG.Tweening;
 public class UIAnimation : MonoBehaviour
 {
-    public RectTransform bagPanel,miniMap,hpBar,functionBar;
+    public RectTransform bagPanel,miniMap,hpBar,functionBar,pauseMenu;
     // Start is called before the first frame update
     void Start()
     {
