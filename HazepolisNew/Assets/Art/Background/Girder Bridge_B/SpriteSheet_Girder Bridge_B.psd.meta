@@ -1,7 +1,31 @@
 fileFormatVersion: 2
 guid: c8e7e69503a360842a38c85cec3462ca
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -9102567441336587908
+    second: SpriteSheet_Girder Bridge_B_0
+  - first:
+      213: 1674008218399656398
+    second: SpriteSheet_Girder Bridge_B_1
+  - first:
+      213: -8324999852346092292
+    second: SpriteSheet_Girder Bridge_B_2
+  - first:
+      213: -7604646975263728356
+    second: SpriteSheet_Girder Bridge_B_3
+  - first:
+      213: -6800079778035882218
+    second: SpriteSheet_Girder Bridge_B_4
+  - first:
+      213: 6661913826460902511
+    second: SpriteSheet_Girder Bridge_B_5
+  - first:
+      213: -6186963341210690845
+    second: SpriteSheet_Girder Bridge_B_6
+  - first:
+      213: -2470339779290506892
+    second: SpriteSheet_Girder Bridge_B_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +65,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -65,7 +89,19 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -77,7 +113,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: SpriteSheet_Girder Bridge_B_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 544
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c79a81bb32f2da180800000000000000
+      internalID: -9102567441336587908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Girder Bridge_B_1
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 0
+        width: 544
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9cbc8fa954b3710800000000000000
+      internalID: 1674008218399656398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Girder Bridge_B_2
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 0
+        width: 544
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf45bb5fdb8a77c80800000000000000
+      internalID: -8324999852346092292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Girder Bridge_B_3
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 0
+        width: 544
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d182dfdddd67690800000000000000
+      internalID: -7604646975263728356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Girder Bridge_B_4
+      rect:
+        serializedVersion: 2
+        x: 2176
+        y: 0
+        width: 544
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 617aad1687341a1a0800000000000000
+      internalID: -6800079778035882218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Girder Bridge_B_5
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 0
+        width: 544
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64277e245fd37c50800000000000000
+      internalID: 6661913826460902511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Girder Bridge_B_6
+      rect:
+        serializedVersion: 2
+        x: 3264
+        y: 0
+        width: 544
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ead5c00f9d732aa0800000000000000
+      internalID: -6186963341210690845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Girder Bridge_B_7
+      rect:
+        serializedVersion: 2
+        x: 3808
+        y: 0
+        width: 544
+        height: 336
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4795fd42f0797bdd0800000000000000
+      internalID: -2470339779290506892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -90,7 +294,7 @@ TextureImporter:
     secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
+  pSDShowRemoveMatteOption: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 

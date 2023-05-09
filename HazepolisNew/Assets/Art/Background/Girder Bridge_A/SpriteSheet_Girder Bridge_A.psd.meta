@@ -1,7 +1,31 @@
 fileFormatVersion: 2
 guid: aeb7c5dc5214a464cbaa1044ad6e3b25
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 8917368966630601578
+    second: SpriteSheet_Girder Bridge_A_0
+  - first:
+      213: 2863438250068045475
+    second: SpriteSheet_Girder Bridge_A_1
+  - first:
+      213: 3694141673668469880
+    second: SpriteSheet_Girder Bridge_A_2
+  - first:
+      213: 1664480360093264974
+    second: SpriteSheet_Girder Bridge_A_3
+  - first:
+      213: 3744799616005626610
+    second: SpriteSheet_Girder Bridge_A_4
+  - first:
+      213: 899982328989272190
+    second: SpriteSheet_Girder Bridge_A_5
+  - first:
+      213: -7826056216499266240
+    second: SpriteSheet_Girder Bridge_A_6
+  - first:
+      213: 8959388778851419546
+    second: SpriteSheet_Girder Bridge_A_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -65,7 +89,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -77,7 +101,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -89,7 +113,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: SpriteSheet_Girder Bridge_A_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 503
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63fb1334dbd0cb70800000000000000
+      internalID: 8917368966630601578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Girder Bridge_A_1
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 0
+        width: 503
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae6293dae9fcb720800000000000000
+      internalID: 2863438250068045475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Girder Bridge_A_2
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 0
+        width: 503
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 874e9f0a74a344330800000000000000
+      internalID: 3694141673668469880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Girder Bridge_A_3
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 0
+        width: 503
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c29f6911c691710800000000000000
+      internalID: 1664480360093264974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Girder Bridge_A_4
+      rect:
+        serializedVersion: 2
+        x: 2012
+        y: 0
+        width: 503
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fad803f86338f330800000000000000
+      internalID: 3744799616005626610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Girder Bridge_A_5
+      rect:
+        serializedVersion: 2
+        x: 2515
+        y: 0
+        width: 503
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e78c88fe8216d7c00800000000000000
+      internalID: 899982328989272190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Girder Bridge_A_6
+      rect:
+        serializedVersion: 2
+        x: 3018
+        y: 0
+        width: 503
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04dd257d553446390800000000000000
+      internalID: -7826056216499266240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_Girder Bridge_A_7
+      rect:
+        serializedVersion: 2
+        x: 3521
+        y: 0
+        width: 503
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a954f0020a4265c70800000000000000
+      internalID: 8959388778851419546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

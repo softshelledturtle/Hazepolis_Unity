@@ -25513,12 +25513,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8662216607254740512, guid: 17c2e9afb76b1814d9937797c5c4aadc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.0761957
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662216607254740512, guid: 17c2e9afb76b1814d9937797c5c4aadc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -64.07574
+      value: -64.1755
       objectReference: {fileID: 0}
     - target: {fileID: 8662216607254740512, guid: 17c2e9afb76b1814d9937797c5c4aadc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -15.815757
+      value: -15.23
       objectReference: {fileID: 0}
     - target: {fileID: 8662216607254740512, guid: 17c2e9afb76b1814d9937797c5c4aadc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -25552,9 +25556,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8662216607254740513, guid: 17c2e9afb76b1814d9937797c5c4aadc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8917368966630601578, guid: aeb7c5dc5214a464cbaa1044ad6e3b25, type: 3}
     - target: {fileID: 8662216607254740517, guid: 17c2e9afb76b1814d9937797c5c4aadc, type: 3}
       propertyPath: m_Name
       value: Girder Bridge_A
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662216607254740519, guid: 17c2e9afb76b1814d9937797c5c4aadc, type: 3}
+      propertyPath: m_Size.y
+      value: 0.1406766
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662216607254740519, guid: 17c2e9afb76b1814d9937797c5c4aadc, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.052691396
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662216607254740519, guid: 17c2e9afb76b1814d9937797c5c4aadc, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 5.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 8662216607254740519, guid: 17c2e9afb76b1814d9937797c5c4aadc, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3.18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17c2e9afb76b1814d9937797c5c4aadc, type: 3}
