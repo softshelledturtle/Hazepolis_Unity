@@ -21,5 +21,13 @@
     "itemType": "Quest",
     "actionName": "Touch",
     "itemModifier": 0
+  },
+  {
+    "objectSlug": "letter",
+    "itemName": "Letter",
+    "description": "I must bring Dana back home",
+    "itemType": "Quest",
+    "actionName": "Close",
+    "itemModifier": 0
   }
 ]

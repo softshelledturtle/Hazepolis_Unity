@@ -1175,7 +1175,7 @@ PrefabInstance:
     - target: {fileID: 2919287984310615951, guid: 465b8e34f667e164fbbd20f73723390a, type: 3}
       propertyPath: DialogUI
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 614971793}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 465b8e34f667e164fbbd20f73723390a, type: 3}
 --- !u!1 &609883669
@@ -1378,6 +1378,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a813e8a02f076f4384f00c160d7c960, type: 3}
+--- !u!1 &614971793 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4623310477529587319, guid: 1a813e8a02f076f4384f00c160d7c960, type: 3}
+  m_PrefabInstance: {fileID: 614971792}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &617773337
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4648,7 +4653,7 @@ PrefabInstance:
     - target: {fileID: 2919287984310615951, guid: 465b8e34f667e164fbbd20f73723390a, type: 3}
       propertyPath: DialogUI
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 614971793}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 465b8e34f667e164fbbd20f73723390a, type: 3}
 --- !u!1001 &8396735983607267530
