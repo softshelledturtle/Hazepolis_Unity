@@ -10,6 +10,7 @@ public class Eammon : MonoBehaviour
     public static Eammon instance;
     //change scene
     public string scenePassWord;
+    public string KeyPassword;
     //QuestSystem
     //public Quest quest;
     //public int health = 100;

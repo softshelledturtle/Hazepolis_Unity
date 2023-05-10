@@ -43,6 +43,7 @@ public class QuestGiver : NPC
             Quest.GiveReward();
             Helped = true;
             AssignedQuest = false;
+
             DialogueSystem.Instance.AddNewDialogue(new string[] { "Thanks for helping", "here you go" }, name);
             Debug.Log("DialogueSystem: Thanks");
         }

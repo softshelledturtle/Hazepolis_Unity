@@ -9,7 +9,6 @@ public class Key : MonoBehaviour,IConsumable
         Debug.Log("You use a key!");
         Destroy(gameObject);
     }
-
     void IConsumable.Consume(CharacterStat stat)
     {
         Debug.Log("You use a door key");

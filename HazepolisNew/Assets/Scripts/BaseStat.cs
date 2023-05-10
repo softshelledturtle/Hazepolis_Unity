@@ -7,7 +7,7 @@ using Newtonsoft.Json.Converters;
 
 public class BaseStat
 {
-    public enum BaseStatType {Sanity} 
+    public enum BaseStatType {Sanity,PassWord} 
 
     public List<StatBonus> BaseAdditives { get; set; }
     [JsonConverter(typeof(StringEnumConverter))]

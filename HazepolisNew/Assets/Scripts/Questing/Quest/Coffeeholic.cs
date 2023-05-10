@@ -8,7 +8,11 @@ public class Coffeeholic : Quest
     {
         Debug.Log("Coffeeholic assigned");
         QuestName = "Coffeeholic";
+
+        QuestRequire = "Coffee";
+        QuestReward = "Thank";
         Description = "No coffee, No life.";
+
         ItemReward = ItemDatabase.Instance.GetItem("coffee_log");
         CoinReward = 100;
 

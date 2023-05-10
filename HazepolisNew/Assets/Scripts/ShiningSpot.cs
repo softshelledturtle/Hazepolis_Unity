@@ -9,8 +9,7 @@ public class ShiningSpot : NPC
     public string itemSlug;
 
     public PickupItem pickupItem;
-    private void Start()
-    {
+    private void Start(){
         DropTable = new DropTable();
         DropTable.loot = new List<LootDrop>
         {

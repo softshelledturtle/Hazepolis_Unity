@@ -22,6 +22,7 @@ public class InventoryUIItem : MonoBehaviour
         itemImage.sprite = Resources.Load<Sprite>("UI/Icons/Items/" + item.ObjectSlug);
     }
 
+
     public void OnSelectItemButton()
     {
         InventoryController.Instance.SetItemDetails(item, GetComponent<Button>());

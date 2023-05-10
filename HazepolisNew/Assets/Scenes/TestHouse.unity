@@ -2680,6 +2680,102 @@ Transform:
   m_Father: {fileID: 1178525072}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1674778075
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 482281427, guid: 8a6ce53f5d9b8dd48b2b58e43fbe8ac2, type: 3}
+      propertyPath: trigger
+      value: 
+      objectReference: {fileID: 482281428, guid: 8a6ce53f5d9b8dd48b2b58e43fbe8ac2, type: 3}
+    - target: {fileID: 482281427, guid: 8a6ce53f5d9b8dd48b2b58e43fbe8ac2, type: 3}
+      propertyPath: DialogUI
+      value: 
+      objectReference: {fileID: 3193058512510387976}
+    - target: {fileID: 497524095652508369, guid: 8a6ce53f5d9b8dd48b2b58e43fbe8ac2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ef2e86216e88a9943b3bba714a0d0d17, type: 3}
+    - target: {fileID: 497524095652508369, guid: 8a6ce53f5d9b8dd48b2b58e43fbe8ac2, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5657896760050597750, guid: 8a6ce53f5d9b8dd48b2b58e43fbe8ac2, type: 3}
+      propertyPath: m_Name
+      value: NPCTest (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655740013398255617, guid: 8a6ce53f5d9b8dd48b2b58e43fbe8ac2, type: 3}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655740013398255617, guid: 8a6ce53f5d9b8dd48b2b58e43fbe8ac2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655740013398255617, guid: 8a6ce53f5d9b8dd48b2b58e43fbe8ac2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655740013398255617, guid: 8a6ce53f5d9b8dd48b2b58e43fbe8ac2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655740013398255617, guid: 8a6ce53f5d9b8dd48b2b58e43fbe8ac2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655740013398255617, guid: 8a6ce53f5d9b8dd48b2b58e43fbe8ac2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655740013398255617, guid: 8a6ce53f5d9b8dd48b2b58e43fbe8ac2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655740013398255617, guid: 8a6ce53f5d9b8dd48b2b58e43fbe8ac2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655740013398255617, guid: 8a6ce53f5d9b8dd48b2b58e43fbe8ac2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655740013398255617, guid: 8a6ce53f5d9b8dd48b2b58e43fbe8ac2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8655740013398255617, guid: 8a6ce53f5d9b8dd48b2b58e43fbe8ac2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1745389948, guid: 8a6ce53f5d9b8dd48b2b58e43fbe8ac2, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 8a6ce53f5d9b8dd48b2b58e43fbe8ac2, type: 3}
+--- !u!1 &1674778076 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5657896760050597750, guid: 8a6ce53f5d9b8dd48b2b58e43fbe8ac2, type: 3}
+  m_PrefabInstance: {fileID: 1674778075}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1674778077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674778076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 982caefc1ee9a3f46a3af785eb62f4b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+  - Quest Test
+  name: 
+  quests: {fileID: 191988020}
+  questType: 
 --- !u!1 &1779534658
 GameObject:
   m_ObjectHideFlags: 0
