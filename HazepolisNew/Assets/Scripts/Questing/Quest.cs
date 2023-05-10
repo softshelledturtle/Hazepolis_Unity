@@ -16,6 +16,11 @@ public class Quest : MonoBehaviour
     public int CoinReward { get; set; }
     public bool Completed { get; set; }
 
+    //public bool isStarted;
+    //public bool isComplete;
+    //public bool isFinished;
+
+
     public void CheckGoals()
     {
         Completed = Goals.All(g => g.Completed);
@@ -28,29 +33,30 @@ public class Quest : MonoBehaviour
             InventoryController.Instance.GiveItem(ItemReward);
     }
 
-    //public class QuestTask
-    //{
-    //    //任務狀態查詢
-    //    public QuestData_SO questData;
-    //    public bool IsStarted
-    //    {
-    //        get { return questData.isStarted; }
-    //        set { questData.isStarted = value; }
-    //    }
+    public class QuestTask
+    {
+        //任務狀態查詢
+        public Quest questData;
 
-    //    public bool IsComplete
-    //    {
-    //        get { return questData.isComplete; }
-    //        set { questData.isComplete = value; }
-    //    }
+        //public bool IsStarted
+        //{
+        //    get { return questData.isStarted; }
+        //    set { questData.isStarted = value; }
+        //}
 
-    //    public bool IsFinished
-    //    {
-    //        get { return questData.isFinished; }
-    //        set { questData.isFinished = value; }
-    //    }
+        //public bool IsComplete
+        //{
+        //    get { return questData.Completed; }
+        //    set { questData.Completed = value; }
+        //}
 
-    //}
+        //public bool IsFinished
+        //{
+        //    get { return questData.isFinished; }
+        //    set { questData.isFinished = value; }
+        //}
+
+    }
 
 
 
