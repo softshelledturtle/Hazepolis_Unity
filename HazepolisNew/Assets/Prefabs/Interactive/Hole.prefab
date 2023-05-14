@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 8396735983866048936}
   - component: {fileID: 8396735983866048939}
   - component: {fileID: 8396735983866048938}
-  - component: {fileID: 2053938531}
   m_Layer: 8
   m_Name: Hole
   m_TagString: Untagged
@@ -136,7 +135,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.47}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -147,21 +146,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.33, y: 0.38}
+  m_Size: {x: 2.96, y: 0.41}
   m_EdgeRadius: 0
---- !u!114 &2053938531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8396735983866048917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51ad005d99509a44298f70d885d650c7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Basement
-  isLocked: 0
-  newScenePassword: basement
-  KeyPassword: 
