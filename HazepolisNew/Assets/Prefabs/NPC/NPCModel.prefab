@@ -442,6 +442,7 @@ GameObject:
   - component: {fileID: 1102380468982092511}
   - component: {fileID: 5709138920162349220}
   - component: {fileID: 5709138920162349218}
+  - component: {fileID: 5419427635519948195}
   m_Layer: 0
   m_Name: NPCModel
   m_TagString: Untagged
@@ -556,7 +557,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Button: {fileID: 5709138918361774540}
   DialogUI: {fileID: 8820891349169952535}
-  trigger: {fileID: 0}
+--- !u!114 &5419427635519948195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5129351026775105400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23fbcf779c767064b8247f875701a097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: []
+  name: 
 --- !u!1 &5709138918361774540
 GameObject:
   m_ObjectHideFlags: 0
