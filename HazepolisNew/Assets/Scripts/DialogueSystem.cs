@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class DialogueSystem : MonoBehaviour
 {
-    public static DialogueSystem Instance { get; set; }
+    public static DialogueSystem Instance;
+
     public GameObject dialoguePanel;
     public string npcName;
     public List<string> dialogueLines = new List<string>();
@@ -13,6 +14,8 @@ public class DialogueSystem : MonoBehaviour
     Button continueButton;
     Text dialogueText, nameText;
     int dialogueIndex;
+
+    public QuestGiver currentQuestgiver;
 
     void Awake()
     {
@@ -30,6 +33,8 @@ public class DialogueSystem : MonoBehaviour
         {
             Instance = this;
         }
+
+
     }
 
     public void AddNewDialogue(string[] lines, string npcName)
@@ -59,6 +64,13 @@ public class DialogueSystem : MonoBehaviour
         else
         {
             dialoguePanel.SetActive(false);
+
+            if (currentQuestgiver == null) { return; }
+            else { 
+                currentQuestgiver.GiveQuest();
+                QuestManager.instance.UpdateGoals();
+            }
+            
         }
     }
 

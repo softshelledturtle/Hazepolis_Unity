@@ -1,27 +1,42 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
 
 public class Quest : MonoBehaviour
 {
-    public List<Goal> Goals { get; set; } = new List<Goal>();
+    public static Quest instance;
+
+    public List<Goal> Goals = new List<Goal>();
 
     public string QuestName { get; set; }
+    public string Description { get; set; }
     public string QuestReward { get; set; }
     public string QuestRequire { get; set; }
-    public string Description { get; set; }
+    
 
     public Item ItemReward { get; set; }
     public int CoinReward { get; set; }
     public bool Completed { get; set; }
 
-    public void CheckGoals()
+    //public void CheckGoals()
+    //{
+    //    Completed = Goals.All(g => g.Completed);
+    //    if (Completed) GiveReward();
+    //}
+    private void Awake()
     {
-        Completed = Goals.All(g => g.Completed);
-        if (Completed) GiveReward();
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            if (instance != this)
+            {
+                Destroy(gameObject);
+            }
+        }
+        DontDestroyOnLoad(gameObject);
     }
-
     public void GiveReward()
     {
         if (ItemReward != null)
@@ -31,7 +46,7 @@ public class Quest : MonoBehaviour
     //public class QuestTask
     //{
     //    //¥ô°Èª¬ºA¬d¸ß
-    //    public QuestData_SO questData;
+    //    public Quest questData;
     //    public bool IsStarted
     //    {
     //        get { return questData.isStarted; }
@@ -51,7 +66,6 @@ public class Quest : MonoBehaviour
     //    }
 
     //}
-
 
 
 

@@ -29,7 +29,7 @@ public class CollectionGoal : Goal
         {
             Debug.Log("Detectrd required item" + ItemID);
             this.CurrentAmount++;
-            Evaluate();
+            //Evaluate();
         }
     }
 }

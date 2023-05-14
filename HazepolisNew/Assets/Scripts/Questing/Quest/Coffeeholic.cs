@@ -4,11 +4,25 @@ using UnityEngine;
 
 public class Coffeeholic : Quest
 {
+    public static Coffeeholic instance;
+
+    private void Awake()
+    {
+        if (instance == null) { instance = this; }
+        else
+        {
+            if (instance != this)
+            {
+                Destroy(gameObject);
+            }
+        }
+        DontDestroyOnLoad(gameObject);
+    }
     private void Start()
     {
         Debug.Log("Coffeeholic assigned");
-        QuestName = "Coffeeholic";
 
+        QuestName = "Coffeeholic";
         QuestRequire = "Coffee";
         QuestReward = "Thank";
         Description = "No coffee, No life.";
@@ -20,4 +34,6 @@ public class Coffeeholic : Quest
 
         Goals.ForEach(g => g.Init());
     }
+
+
 }
