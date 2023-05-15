@@ -9,13 +9,14 @@ public class TalkButton : MonoBehaviour
     public GameObject DialogUI;
 
     public QuestGiver questgiver;
+    public QuestTarget questTarget;
 
     //靠近NpC顯示對話符號
     private void OnTriggerEnter2D(Collider2D other)
     {
         Button.SetActive(true);//DialogUI.SetActive(true);
-
         DialogueSystem.Instance.currentQuestgiver = questgiver;
+        DialogueSystem.Instance.questTarget = questTarget;
     }
 
     private void OnTriggerExit2D(Collider2D other)

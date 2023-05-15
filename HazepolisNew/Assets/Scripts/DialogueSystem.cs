@@ -16,6 +16,7 @@ public class DialogueSystem : MonoBehaviour
     int dialogueIndex;
 
     public QuestGiver currentQuestgiver;
+    public QuestTarget questTarget;
 
     void Awake()
     {
@@ -65,14 +66,43 @@ public class DialogueSystem : MonoBehaviour
         {
             dialoguePanel.SetActive(false);
 
-            if (currentQuestgiver == null) { return; }
-            else { 
+            if (currentQuestgiver == null)
+            { 
+                Debug.Log("There is no quest in this person"); 
+            }
+            else 
+            { 
                 currentQuestgiver.GiveQuest();
                 QuestManager.instance.UpdateGoals();
                 //©I¥s¼uµ¡
-            }
             
+            }
+            if (questTarget != null)
+            {
+                questTarget.hasTalked = true;
+                questTarget.QuestComplete();
+            }
+            else { return; }
+
         }
     }
+
+    //public bool GetQuestResult()
+    //{
+    //    //if (talkable.questable == null)
+    //    //    return false;
+
+    //    //for (int i = 0; i < Player.instance.questList.Count; i++)
+    //    //{
+    //    //    if (talkable.questable.quest.questName == Player.instance.questList[i].questName
+    //    //        && Player.instance.questList[i].questStatus == Quest.QuestStatus.Completed)
+    //    //    {
+    //    //        talkable.questable.quest.questStatus = Quest.QuestStatus.Completed;
+    //    //        return true;
+    //    //    }
+    //    //}
+
+    //    //return false;
+    //}
 
 }

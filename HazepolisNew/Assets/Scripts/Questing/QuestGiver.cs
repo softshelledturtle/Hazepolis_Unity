@@ -14,6 +14,8 @@ public class QuestGiver : NPC
     //private string questType;
     private Quest Quest { get; set; }
     public Goal goal;
+    public QuestTarget questTarget;
+
     public override void Interact()
     {
         if (!AssignedQuest && !Helped)
@@ -38,8 +40,14 @@ public class QuestGiver : NPC
         if (goal.questStatus == Goal.QuestStatus.Waiting)
         {
             //give quest
-            Quest.instance.Goals.Add(goal);
             goal.questStatus = Goal.QuestStatus.Accepted;
+            Quest.instance.Goals.Add(goal);
+
+            if (goal.questType == Goal.QuestType.Collect)
+            {
+                questTarget.QuestComplete();
+               
+            }
         }
         else
         {

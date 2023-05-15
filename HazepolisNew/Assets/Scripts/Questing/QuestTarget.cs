@@ -20,13 +20,14 @@ public class QuestTarget : MonoBehaviour
 
     //任務完成後調用(物品集齊，指定人物對話)
     public void QuestComplete() {
-        Debug.Log("UPDATE2222");
+        
         for (int i = 0; i < Quest.instance.Goals.Count; i++)
         {
-            Debug.Log("UPDATE77777");
-            if (questName == Quest.instance.Goals[i].questname && Quest.instance.Goals[i].questStatus == Goal.QuestStatus.Accepted)
+           
+            if (questName == Quest.instance.Goals[i].questname
+                && Quest.instance.Goals[i].questStatus == Goal.QuestStatus.Accepted)
             {
-                Debug.Log("UPDATE7888888");
+              
                 switch (questType)
                 {
                     case QuestType.Collect:

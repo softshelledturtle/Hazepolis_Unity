@@ -17,6 +17,7 @@ public class QuestNameButton : MonoBehaviour
 
     private void Awake()
     {
+        Quest.instance = currentData;
         GetComponent<Button>().onClick.AddListener(UpdateQuestContent);
         //if (instance == null) { instance = this; }
         //else
@@ -30,9 +31,10 @@ public class QuestNameButton : MonoBehaviour
     }
     void UpdateQuestContent()
     {
+        
         questContentText.text = currentData.Description;
         questNameText.text = currentData.QuestName;
-
+        
         questReward.text = currentData.QuestReward;
         questRequirement.text = currentData.QuestRequire;
 
