@@ -1307,7 +1307,7 @@ PrefabInstance:
     - target: {fileID: 2031136843078500572, guid: c1896802adf781641a99f61549899c75, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d4f222aa68566d649a1cc687484d8f7b, type: 2}
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 2031136843078500573, guid: c1896802adf781641a99f61549899c75, type: 3}
       propertyPath: m_Name
       value: Box
@@ -1936,7 +1936,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2506,7 +2506,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Level0-Bridge
+  isLocked: 0
   newScenePassword: Level0-0
+  KeyPassword: 
 --- !u!61 &1539246396
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3047,6 +3049,14 @@ PrefabInstance:
       propertyPath: inventoryUIDetailsPanel
       value: 
       objectReference: {fileID: 3193058512865053075}
+    - target: {fileID: 1456187800, guid: 51db9664f3a431b42a02b931ee93a0ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 2221515452337536991, guid: 51db9664f3a431b42a02b931ee93a0ce, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 5756310119357985415, guid: 51db9664f3a431b42a02b931ee93a0ce, type: 3}
       propertyPath: m_Name
       value: Eammon
@@ -12738,7 +12748,7 @@ PrefabInstance:
     - target: {fileID: 2330989015685245873, guid: 7f506f5d8fe65cb4fa4efffe8c2746b9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 7258933119815384589, guid: 7f506f5d8fe65cb4fa4efffe8c2746b9, type: 3}
       propertyPath: m_RootOrder
       value: 7

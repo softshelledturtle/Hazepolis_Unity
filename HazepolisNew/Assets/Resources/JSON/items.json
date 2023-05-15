@@ -19,7 +19,7 @@
     "itemName": "Basement key",
     "description": "you think......maybe you used to use it.",
     "itemType": "Quest",
-    "actionName": "Touch",
+    "actionName": "Use",
     "itemModifier": 0
   },
   {
@@ -29,5 +29,20 @@
     "itemType": "Quest",
     "actionName": "Close",
     "itemModifier": 0
+  },
+  {
+    "objectSlug": "gummy",
+    "itemName": "GummyPapachi",
+    "description": "The most popular gummy in the city. Every child will die for it......just kidding......or not.",
+    "itemType": "Consumable",
+    "actionName": "Eat",
+    "itemModifier": 0,
+    "Stats": [
+      {
+        "StatType": "Sanity",
+        "BaseValue": -50,
+        "StatName": "Sanity"
+      }
+    ]
   }
 ]
