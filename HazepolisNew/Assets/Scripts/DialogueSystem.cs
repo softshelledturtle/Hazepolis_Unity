@@ -69,6 +69,7 @@ public class DialogueSystem : MonoBehaviour
             else { 
                 currentQuestgiver.GiveQuest();
                 QuestManager.instance.UpdateGoals();
+                //©I¥s¼uµ¡
             }
             
         }

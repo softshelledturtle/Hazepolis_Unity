@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Coffeeholic : Quest
 {
-    public static Coffeeholic instance;
+    public static new Coffeeholic instance;
 
     private void Awake()
     {
@@ -16,7 +16,7 @@ public class Coffeeholic : Quest
                 Destroy(gameObject);
             }
         }
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(transform.root.gameObject);
     }
     private void Start()
     {
@@ -30,7 +30,7 @@ public class Coffeeholic : Quest
         ItemReward = ItemDatabase.Instance.GetItem("coffee_log");
         CoinReward = 100;
 
-        Goals.Add(new CollectionGoal(this, "coffee_log", "Find a Log Coffee.", false, 0, 1));
+        Goals.Add(new CollectionGoal(this, "coffee_log", "Find a Log Coffee.", 0, 1));
 
         Goals.ForEach(g => g.Init());
     }

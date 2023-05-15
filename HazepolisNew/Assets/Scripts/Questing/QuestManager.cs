@@ -8,7 +8,8 @@ public class QuestManager : MonoBehaviour
     public static QuestManager instance;
 
     public GameObject[] questUIArray;
-    public GameObject questNameBtn;
+    public GameObject[] questNameBtn;
+    public Quest Btn;
     private void Awake()
     {
         if (instance == null) { instance = this; }
@@ -19,7 +20,7 @@ public class QuestManager : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(transform.root.gameObject);
     }
     //更新UI
     public void UpdateGoals()
@@ -27,7 +28,10 @@ public class QuestManager : MonoBehaviour
         for (int i = 0; i < Quest.instance.Goals.Count; i++)//有多少个任务显示多少个List，而不是有多少List显示多少个任务
         {
             questUIArray[i].transform.GetChild(1).GetComponent<Text>().text = Quest.instance.Goals[i].questname;
-            questNameBtn.transform.GetComponent<Button>().interactable = true;
+            //questNameBtn.transform.GetComponent<Button>().interactable = true;
+            questUIArray[i].SetActive (true);
+            //Btn = questNameBtn.GetComponent<QuestNameButton>().currentData;
+
             if (Quest.instance.Goals[i].questStatus == Goal.QuestStatus.Accepted)
             {
                 questUIArray[i].transform.GetChild(0).GetComponent<Text>().text

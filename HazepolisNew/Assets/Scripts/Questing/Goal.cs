@@ -5,18 +5,23 @@ public class Goal
 {
     public Quest Quest { get; set; }
 
-    public string questname;
+    
     public enum QuestType { Collect,Talk,Reach};
     public enum QuestStatus { Waiting,Accepted,Completed};
+    
+    public string questname;
+    public QuestType questType;
+    public QuestStatus questStatus;
 
     public string Description { get; set; }
     public bool Completed { get; set; }
     public int CurrentAmount { get; set; }
-    public int RequiredAmount { get; set; }
+
+    [Header("Gathering Type Quest")]
+    public int RequiredAmount;
     public object questData { get; internal set; }
 
-    public QuestType questType;
-    public QuestStatus questStatus;
+
 
     public virtual void Init()
     {

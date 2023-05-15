@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class QuestNameButton : MonoBehaviour
 {
-    public static QuestNameButton instance; 
+    //public static QuestNameButton instance; 
+
     public Quest currentData;
 
     public Text questNameText;
@@ -17,15 +18,15 @@ public class QuestNameButton : MonoBehaviour
     private void Awake()
     {
         GetComponent<Button>().onClick.AddListener(UpdateQuestContent);
-        if (instance == null) { instance = this; }
-        else
-        {
-            if (instance != this)
-            {
-                Destroy(gameObject);
-            }
-        }
-        DontDestroyOnLoad(gameObject);
+        //if (instance == null) { instance = this; }
+        //else
+        //{
+        //    if (instance != this)
+        //    {
+        //        Destroy(gameObject);
+        //    }
+        //}
+        //DontDestroyOnLoad(transform.root.gameObject);
     }
     void UpdateQuestContent()
     {
@@ -34,6 +35,8 @@ public class QuestNameButton : MonoBehaviour
 
         questReward.text = currentData.QuestReward;
         questRequirement.text = currentData.QuestRequire;
+
+
         //QuestUI.Instance.SetupRequireList(currentData);
 
         //foreach (Transform item in QuestUI.Instance.rewardTransform)

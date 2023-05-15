@@ -11,7 +11,7 @@ public class Quest : MonoBehaviour
     public string Description { get; set; }
     public string QuestReward { get; set; }
     public string QuestRequire { get; set; }
-    
+    public int itemAmount;
 
     public Item ItemReward { get; set; }
     public int CoinReward { get; set; }
@@ -35,7 +35,7 @@ public class Quest : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-        DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(transform.root.gameObject);
     }
     public void GiveReward()
     {
