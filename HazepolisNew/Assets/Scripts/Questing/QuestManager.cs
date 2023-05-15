@@ -9,7 +9,7 @@ public class QuestManager : MonoBehaviour
 
     public GameObject[] questUIArray;
     public GameObject[] questNameBtn;
-    public Quest Btn;
+
     private void Awake()
     {
         if (instance == null) { instance = this; }

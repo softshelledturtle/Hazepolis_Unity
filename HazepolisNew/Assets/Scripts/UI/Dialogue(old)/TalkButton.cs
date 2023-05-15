@@ -10,6 +10,16 @@ public class TalkButton : MonoBehaviour
 
     public QuestGiver questgiver;
     public QuestTarget questTarget;
+    public TalkButton talkButton;
+    public string npcName;
+
+
+    [TextArea(1, 5)] 
+    public string[] lines;
+    [TextArea(1, 4)]
+    public string[] congratslines;
+    [TextArea(1, 4)]
+    public string[] completelines;
 
     //靠近NpC顯示對話符號
     private void OnTriggerEnter2D(Collider2D other)
@@ -17,6 +27,7 @@ public class TalkButton : MonoBehaviour
         Button.SetActive(true);//DialogUI.SetActive(true);
         DialogueSystem.Instance.currentQuestgiver = questgiver;
         DialogueSystem.Instance.questTarget = questTarget;
+        DialogueSystem.Instance.talkButton = this;
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -31,14 +42,29 @@ public class TalkButton : MonoBehaviour
     {
         if (Button.activeSelf && Input.GetKeyDown(KeyCode.T))
         {
-            DialogUI.SetActive(true);
-            //trigger.StartDialog();
-
-            Debug.Log("Conversation");
-            if (this.tag == "Interactable")
+            if (questgiver == null)
             {
+                DialogUI.SetActive(true);
+                //trigger.StartDialog();
+
+                Debug.Log("Conversation");
+                if (this.tag == "Interactable")
+                {
                 this.GetComponent<Interactable>().Interact();
+                }
             }
+            else
+            {
+                if (questgiver.goal.questStatus == Goal.QuestStatus.Completed)
+                {
+                    DialogueSystem.Instance.AddNewDialogue(completelines, npcName);
+                }
+                else
+                {
+                    DialogueSystem.Instance.AddNewDialogue(lines, npcName);
+                }
+            }
+
         }
     }
 }

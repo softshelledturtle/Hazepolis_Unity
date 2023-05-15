@@ -15,6 +15,8 @@ public class QuestGiver : NPC
     private Quest Quest { get; set; }
     public Goal goal;
     public QuestTarget questTarget;
+    public bool isFinished;//任務完成對話 default false
+
 
     public override void Interact()
     {
@@ -37,16 +39,22 @@ public class QuestGiver : NPC
     {
         //AssignedQuest = true;
         //Quest = (Quest)quests.AddComponent(System.Type.GetType(questType));
-        if (goal.questStatus == Goal.QuestStatus.Waiting)
+        if (isFinished == false) 
         {
-            //give quest
-            goal.questStatus = Goal.QuestStatus.Accepted;
-            Quest.instance.Goals.Add(goal);
+            if (goal.questStatus == Goal.QuestStatus.Waiting)
+            {
+                //give quest
+                goal.questStatus = Goal.QuestStatus.Accepted;
+                Quest.instance.Goals.Add(goal);
 
+                if (goal.questType == Goal.QuestType.Collect)
+                {
+                    questTarget.QuestComplete();
+                }
+            }
             if (goal.questType == Goal.QuestType.Collect)
             {
                 questTarget.QuestComplete();
-               
             }
         }
         else
@@ -55,6 +63,7 @@ public class QuestGiver : NPC
             Debug.Log(string.Format("QUEST:{0} has accepted already", goal.questname));
         }
     }
+ }
 
     //void CheckQuest()
     //{
@@ -73,4 +82,4 @@ public class QuestGiver : NPC
     //        Debug.Log("DialogueSystem: Still undone");
     //    }
     //}
-}
+

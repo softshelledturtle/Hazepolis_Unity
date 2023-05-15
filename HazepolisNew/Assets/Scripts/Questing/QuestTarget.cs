@@ -61,13 +61,12 @@ public class QuestTarget : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-
-            for (int i = 0; i < Quest.instance.Goals.Count; i++)
+            for (int i = 0; i < Quest.instance.Goals.Count; i++) 
             {
                 if (Quest.instance.Goals[i].questname == questName)
                 {
-                    if (questType == QuestType.Reach)
-                    {
+                     if (questType == QuestType.Reach)
+                    { 
                         hasReach = true;
                         QuestComplete();
                     }

@@ -17,6 +17,7 @@ public class DialogueSystem : MonoBehaviour
 
     public QuestGiver currentQuestgiver;
     public QuestTarget questTarget;
+    public TalkButton talkButton;
 
     void Awake()
     {
@@ -57,33 +58,74 @@ public class DialogueSystem : MonoBehaviour
 
     public void ContinueDialogue()
     {
-        if(dialogueIndex < dialogueLines.Count-1)
+        
+        if (dialogueIndex < dialogueLines.Count-1)
         {
             dialogueIndex++;
             dialogueText.text = dialogueLines[dialogueIndex];
         }
         else
         {
-            dialoguePanel.SetActive(false);
-
-            if (currentQuestgiver == null)
-            { 
-                Debug.Log("There is no quest in this person"); 
-            }
-            else 
-            { 
-                currentQuestgiver.GiveQuest();
-                QuestManager.instance.UpdateGoals();
-                //呼叫彈窗
+            Debug.Log("AAAAAAAAAAAAAAAAAAA");
             
-            }
-            if (questTarget != null)
-            {
-                questTarget.hasTalked = true;
-                questTarget.QuestComplete();
-            }
-            else { return; }
+            CheckQuestIsComplete();
+            print(CheckQuestIsComplete());
 
+            if (CheckQuestIsComplete() && currentQuestgiver.isFinished == false)
+            {
+                AddNewDialogue(talkButton.congratslines, npcName);
+                currentQuestgiver.isFinished = true;
+            }
+            else
+            {
+                dialoguePanel.SetActive(false);
+
+                if (currentQuestgiver == null)
+                {
+                    Debug.Log("There is no quest in this person");
+                }
+                else
+                {
+                    currentQuestgiver.GiveQuest();
+                    QuestManager.instance.UpdateGoals();
+
+                    if (CheckQuestIsComplete() && currentQuestgiver.isFinished == false)
+                    {
+                        AddNewDialogue(talkButton.congratslines, talkButton.npcName);
+                        currentQuestgiver.isFinished = true;
+                    }
+                }
+                if (questTarget != null)
+                {
+                    for (int i = 0; i < Quest.instance.Goals.Count; i++)
+                    {
+                        if (Quest.instance.Goals[i].questname == questTarget.questName)
+                        {   questTarget.hasTalked = true;
+                            questTarget.QuestComplete();
+                        }
+                    }       
+                }
+                else { return; }
+            }
+
+            #region//backup
+            //if (currentQuestgiver == null)
+            //{ 
+            //    Debug.Log("There is no quest in this person"); 
+            //}
+            //else 
+            //{ 
+            //    currentQuestgiver.GiveQuest();
+            //    QuestManager.instance.UpdateGoals();
+            //}
+            //if (questTarget != null)
+            //{
+            //    questTarget.hasTalked = true;
+            //    questTarget.QuestComplete();
+                
+            //}
+            //else { return; }
+            #endregion
         }
     }
 
@@ -104,5 +146,24 @@ public class DialogueSystem : MonoBehaviour
 
     //    //return false;
     //}
+
+    // 檢查任務是否已經完成，如果完成的話回傳值為True
+    public bool CheckQuestIsComplete() {
+        if (currentQuestgiver == null) 
+        {
+            return false;
+        }
+
+        for (int i = 0; i < Quest.instance.Goals.Count; i++)
+        {
+            if (currentQuestgiver.goal.questname == Quest.instance.Goals[i].questname
+                && Quest.instance.Goals[i].questStatus == Goal.QuestStatus.Completed)
+            {
+                currentQuestgiver.goal.questStatus = Goal.QuestStatus.Completed;
+                return true;
+            }
+        }
+        return false;
+    }
 
 }
