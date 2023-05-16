@@ -6,6 +6,8 @@ public class InventoryUI : MonoBehaviour
 {
     public RectTransform inventoryPanel;
     public RectTransform scrollViewContent;
+    public UIAnimation uiAnimation;
+    public GameObject Toggle_Bag_active;
     InventoryUIItem itemContainer { get; set; }
     bool menuIsActive { get; set; }
     Item currentSelectedItem { get; set; }
@@ -22,7 +24,16 @@ public class InventoryUI : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.B))
         {
             menuIsActive = !menuIsActive;
-            inventoryPanel.gameObject.SetActive(menuIsActive);
+            Toggle_Bag_active.SetActive(menuIsActive);
+            if (menuIsActive)
+            {
+                uiAnimation.bagapear();
+            }
+            else
+            {
+                uiAnimation.bagdisapear();
+            }
+            //inventoryPanel.gameObject.SetActive(menuIsActive);
         }
     }
     public void ItemAdded(Item item)

@@ -19,6 +19,7 @@ public class InventoryController : MonoBehaviour
             Instance = this;
 
         consumableController = GetComponent<ConsumableController>();
+        GiveItem("gummy");
         //GiveItem("coffee_log");
     }
 
