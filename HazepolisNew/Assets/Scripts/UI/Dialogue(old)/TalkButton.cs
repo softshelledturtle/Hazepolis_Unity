@@ -23,6 +23,7 @@ public class TalkButton : MonoBehaviour
     {
         if (Button.activeSelf && Input.GetKeyDown(KeyCode.T))
         {
+            //DialogUI = GameObject.FindWithTag("DialogueUI").GetComponent<GameObject>();
             DialogUI.SetActive(true);
             //trigger.StartDialog();
 
