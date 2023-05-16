@@ -24,6 +24,7 @@ public class QuestManager : MonoBehaviour
     private void Start()
     {
         UpdateGoals();
+    
     }
 
     //更新UI

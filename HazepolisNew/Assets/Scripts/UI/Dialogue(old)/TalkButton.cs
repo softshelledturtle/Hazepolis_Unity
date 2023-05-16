@@ -46,7 +46,7 @@ public class TalkButton : MonoBehaviour
             {
                 DialogUI.SetActive(true);
                 //trigger.StartDialog();
-
+                DialogueSystem.Instance.AddNewDialogue(lines, npcName);
                 Debug.Log("Conversation");
                 if (this.tag == "Interactable")
                 {
