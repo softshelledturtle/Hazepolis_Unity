@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class QuestManager : MonoBehaviour
@@ -8,7 +6,7 @@ public class QuestManager : MonoBehaviour
     public static QuestManager instance;
 
     public GameObject[] questUIArray;
-    public GameObject[] questNameBtn;
+    //public GameObject[] questNameBtn;
 
     private void Awake()
     {
@@ -22,6 +20,12 @@ public class QuestManager : MonoBehaviour
         }
         DontDestroyOnLoad(transform.root.gameObject);
     }
+
+    private void Start()
+    {
+        UpdateGoals();
+    }
+
     //更新UI
     public void UpdateGoals()
     {

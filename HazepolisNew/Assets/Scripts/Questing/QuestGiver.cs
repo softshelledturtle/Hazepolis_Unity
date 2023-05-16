@@ -62,24 +62,27 @@ public class QuestGiver : NPC
             //already has quest
             Debug.Log(string.Format("QUEST:{0} has accepted already", goal.questname));
         }
+        QuestManager.instance.UpdateGoals();
     }
+    
+
  }
 
-    //void CheckQuest()
-    //{
-    //    if (Quest.Completed)
-    //    {
-    //        Quest.GiveReward();
-    //        Helped = true;
-    //        AssignedQuest = false;
+//void CheckQuest()
+//{
+//    if (Quest.Completed)
+//    {
+//        Quest.GiveReward();
+//        Helped = true;
+//        AssignedQuest = false;
 
-    //        DialogueSystem.Instance.AddNewDialogue(new string[] { "Thanks for helping", "here you go" }, name);
-    //        Debug.Log("DialogueSystem: Thanks");
-    //    }
-    //    else
-    //    {
-    //        DialogueSystem.Instance.AddNewDialogue(new string[] { "Thanks for helping", "here you go" }, name);
-    //        Debug.Log("DialogueSystem: Still undone");
-    //    }
-    //}
+//        DialogueSystem.Instance.AddNewDialogue(new string[] { "Thanks for helping", "here you go" }, name);
+//        Debug.Log("DialogueSystem: Thanks");
+//    }
+//    else
+//    {
+//        DialogueSystem.Instance.AddNewDialogue(new string[] { "Thanks for helping", "here you go" }, name);
+//        Debug.Log("DialogueSystem: Still undone");
+//    }
+//}
 
