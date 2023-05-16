@@ -884,6 +884,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryPanel: {fileID: 3193058512775315073}
   scrollViewContent: {fileID: 3193058513504381827}
+  uiAnimation: {fileID: 0}
+  Toggle_Bag_active: {fileID: 0}
 --- !u!1 &499813330
 GameObject:
   m_ObjectHideFlags: 0
@@ -1307,7 +1309,7 @@ PrefabInstance:
     - target: {fileID: 2031136843078500572, guid: c1896802adf781641a99f61549899c75, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+      objectReference: {fileID: 2100000, guid: d4f222aa68566d649a1cc687484d8f7b, type: 2}
     - target: {fileID: 2031136843078500573, guid: c1896802adf781641a99f61549899c75, type: 3}
       propertyPath: m_Name
       value: Box

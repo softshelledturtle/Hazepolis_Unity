@@ -2112,6 +2112,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryPanel: {fileID: 4623310477257369598}
   scrollViewContent: {fileID: 4623310476635353852}
+  uiAnimation: {fileID: 7481878440071162668}
+  Toggle_Bag_active: {fileID: 7481878438353213800}
 --- !u!1 &4116512798826276991
 GameObject:
   m_ObjectHideFlags: 0
@@ -11877,7 +11879,7 @@ GameObject:
   - component: {fileID: 7481878438353213805}
   - component: {fileID: 7481878438353213806}
   m_Layer: 5
-  m_Name: Toggle_Bag (1)
+  m_Name: Toggle_Bag_active
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
