@@ -9,6 +9,7 @@ TagManager:
   - Bridge
   - Interactable
   - MapConfiner
+  - DialogueUI
   layers:
   - Default
   - TransparentFX
