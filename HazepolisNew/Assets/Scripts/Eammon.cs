@@ -133,7 +133,7 @@ public class Eammon : MonoBehaviour
             if (isClimbling == true && hitInfo.collider != null)
             {
                 currentState = verticalKey == 0 ? "ladderidle" : "ladder";
-                rigid2D.velocity = new Vector2(rigid2D.velocity.x, verticalKey*climbingSpeed);
+                rigid2D.velocity = new Vector2(0, verticalKey*climbingSpeed);
                 rigid2D.gravityScale = 0;
                 Physics2D.IgnoreLayerCollision(9, 10, true);
             }
