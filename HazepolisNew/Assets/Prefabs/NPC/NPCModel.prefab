@@ -556,7 +556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Button: {fileID: 5709138918361774540}
-  DialogUI: {fileID: 8820891349169952535}
+  DialogUI: {fileID: 1163536820288472581, guid: a723f40223379814c94e7bd572a437af, type: 3}
 --- !u!114 &5419427635519948195
 MonoBehaviour:
   m_ObjectHideFlags: 0
