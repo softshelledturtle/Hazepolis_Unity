@@ -87,7 +87,7 @@ public class DialogueSystem : MonoBehaviour
                 else
                 {
                     currentQuestgiver.GiveQuest();
-                    QuestManager.instance.UpdateGoals();
+
 
                     if (CheckQuestIsComplete() && currentQuestgiver.isFinished == false)
                     {
