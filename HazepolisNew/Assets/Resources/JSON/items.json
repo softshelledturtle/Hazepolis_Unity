@@ -1,10 +1,10 @@
 [
   {
     "objectSlug": "coffee_log",
-    "itemName": "Log Coffee",
-    "description": "A coffee that logs something to the console.",
+    "itemName": "黑咖啡",
+    "description": "喝黑咖啡能消水腫。喝黑咖啡能防止失智。喝黑咖啡能改善血液循環。你還不喝嗎？",
     "itemType": "Consumable",
-    "actionName": "Drink",
+    "actionName": "喝！",
     "itemModifier": 0,
     "Stats": [
       {
@@ -16,26 +16,26 @@
   },
   {
     "objectSlug": "key",
-    "itemName": "Basement key",
-    "description": "you think......maybe you used to use it.",
+    "itemName": "地下室鑰匙",
+    "description": "這把鑰匙好像在哪裡看過....../n還是我曾經使用過？",
     "itemType": "Quest",
-    "actionName": "Use",
+    "actionName": "使用",
     "itemModifier": 0
   },
   {
     "objectSlug": "letter",
-    "itemName": "Letter",
-    "description": "I must bring Dana back home",
+    "itemName": "委託信封",
+    "description": "來自柯林先生的信：十分感謝您願意接受我們的委託，在青羽街307號碰面後，我們會付上足夠的委託尾款。隨信付上的是首款和一些糖果，戴納他十分的喜歡，應該可以起到一些作用，請務必安全地將我們的孩子帶回來。再次深深感謝您的幫助，靜候佳音  理查德．柯林上",
     "itemType": "Quest",
-    "actionName": "Close",
+    "actionName": "開啟",
     "itemModifier": 0
   },
   {
     "objectSlug": "gummy",
-    "itemName": "GummyPapachi",
-    "description": "The most popular gummy in the city. Every child will die for it......just kidding......or not.",
+    "itemName": "帕帕奇水果糖",
+    "description": "請記得千萬不要給戴假牙的老人與幼兒吃，不然戴德羅保險公司就要增加新的保險種類了。成分：葡萄、糖、色素3號、快樂、神奇精靈的眼淚與化學物A-05。",
     "itemType": "Consumable",
-    "actionName": "Eat",
+    "actionName": "吃掉",
     "itemModifier": 0,
     "Stats": [
       {
