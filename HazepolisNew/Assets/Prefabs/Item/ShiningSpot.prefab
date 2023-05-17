@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2919287984310615950}
   - component: {fileID: 2919287984310615951}
   - component: {fileID: 2919287984310615948}
+  - component: {fileID: 8399080112504732601}
   m_Layer: 0
   m_Name: ShiningSpot
   m_TagString: Interactable
@@ -166,6 +167,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Button: {fileID: 2919287984435191102}
   DialogUI: {fileID: 1163536820288472581, guid: a723f40223379814c94e7bd572a437af, type: 3}
+  questgiver: {fileID: 0}
+  questTarget: {fileID: 0}
+  talkButton: {fileID: 2919287984310615951}
+  npcName: 
+  lines:
+  - 
+  congratslines:
+  - 
+  completelines:
+  - 
 --- !u!114 &2919287984310615948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -182,10 +193,27 @@ MonoBehaviour:
   - "(\u62CD\u958B\u7070\u5875\u8DDF\u6728\u5C51)"
   - "\u4E00\u628A\u8001\u820A\u7684\u9470\u5319\uFF0C\u9084\u4E0D\u77E5\u9053\u7528\u9014"
   - "\u5148\u6536\u8457\u597D\u4E86"
-  name: Eammon
+  name: "\u57C3\u8499"
   pickable: 1
   itemSlug: key
   pickupItem: {fileID: 7167294662417829709, guid: 4599a0fa58277704bad004315100cb46, type: 3}
+--- !u!114 &8399080112504732601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2919287984310615949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c11f4f20bcb057d4eaeb983ce37f4a63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questName: 
+  questType: 0
+  amount: 0
+  hasTalked: 0
+  hasReach: 0
 --- !u!1 &2919287984435191102
 GameObject:
   m_ObjectHideFlags: 0
