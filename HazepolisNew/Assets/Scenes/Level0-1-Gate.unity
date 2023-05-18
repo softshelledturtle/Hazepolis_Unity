@@ -1617,7 +1617,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneName: UnderVillage
   isLocked: 0
-  newScenePassword: 
+  newScenePassword: pipeline
   KeyPassword: 
 --- !u!61 &166650045
 BoxCollider2D:
@@ -1704,7 +1704,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 166650043}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 26.78, y: -1.21, z: 0}
+  m_LocalPosition: {x: 158.09, y: -80.68, z: 0}
   m_LocalScale: {x: 1.9333571, y: 4.2917066, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
