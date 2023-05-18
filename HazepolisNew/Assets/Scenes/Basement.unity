@@ -3108,6 +3108,10 @@ PrefabInstance:
       propertyPath: petObeject
       value: 
       objectReference: {fileID: 223873113}
+    - target: {fileID: 4277595389830641465, guid: 1f2575b5feeea7540a192c102e242a77, type: 3}
+      propertyPath: walkForce
+      value: 122
+      objectReference: {fileID: 0}
     - target: {fileID: 4277595389830641466, guid: 1f2575b5feeea7540a192c102e242a77, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -4252,7 +4256,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: a073317aa39d3ff4f91debda042dbb62, type: 2}
     - target: {fileID: 8782441472941683396, guid: 51db9664f3a431b42a02b931ee93a0ce, type: 3}
       propertyPath: walkForce
-      value: 25
+      value: 122
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51db9664f3a431b42a02b931ee93a0ce, type: 3}
