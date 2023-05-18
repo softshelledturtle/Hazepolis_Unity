@@ -1976,7 +1976,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Button: {fileID: 1314950356}
-  DialogUI: {fileID: 391327267}
+  DialogUI: {fileID: 1163536820288472581, guid: a723f40223379814c94e7bd572a437af, type: 3}
   questgiver: {fileID: 0}
   questTarget: {fileID: 0}
   talkButton: {fileID: 370173755}
@@ -2127,11 +2127,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &391327267 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4623310477529587319, guid: 1a813e8a02f076f4384f00c160d7c960, type: 3}
-  m_PrefabInstance: {fileID: 1631184154}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &406609871
 GameObject:
   m_ObjectHideFlags: 0
@@ -4712,7 +4707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Button: {fileID: 1102999180}
-  DialogUI: {fileID: 391327267}
+  DialogUI: {fileID: 1163536820288472581, guid: a723f40223379814c94e7bd572a437af, type: 3}
   questgiver: {fileID: 0}
   questTarget: {fileID: 0}
   talkButton: {fileID: 909966890}
