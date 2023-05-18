@@ -16,8 +16,8 @@ public class Dan : MonoBehaviour
     private CapsuleCollider2D capcollider2D;
     private float jumpForce = 1000.0f;
     private float climbingSpeed = 3f;
-    private float walkForce = 20.0f;
-    private float maxWalkForce = 4.0f;
+    private float walkForce = 200.0f;
+    public float maxWalkForce = 6.0f;
     private bool isJumping = false;
     public bool isClimbling = false;
     public int horizontalKey;
@@ -141,8 +141,16 @@ public class Dan : MonoBehaviour
             }
             else
             {
-                currentState = horizontalKey == 0 ? "idle" : "walk";
-                maxWalkForce = 6.0f;
+                if (Input.GetKey(KeyCode.LeftShift))
+                {
+                    currentState = horizontalKey == 0 ? "idle" : "run";
+                    maxWalkForce = 9.0f;
+                }
+                else
+                {
+                    currentState = horizontalKey == 0 ? "idle" : "walk";
+                    maxWalkForce = 6.0f;
+                }
                 collider2D.enabled = true;
             }
         }
