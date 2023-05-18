@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class DialogueSystem : MonoBehaviour
 {
-    public static DialogueSystem Instance;
+    public static DialogueSystem instance;
 
     public GameObject dialoguePanel;
     public string npcName;
@@ -27,14 +27,15 @@ public class DialogueSystem : MonoBehaviour
         continueButton.onClick.AddListener(delegate { ContinueDialogue(); });
         dialoguePanel.SetActive(false);
 
-        if(Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-        }
+        if (instance == null) { instance = this; }
         else
         {
-            Instance = this;
+            if (instance != this)
+            {
+                Destroy(gameObject);
+            }
         }
+        DontDestroyOnLoad(transform.root.gameObject);
 
 
     }
