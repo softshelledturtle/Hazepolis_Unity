@@ -6095,6 +6095,10 @@ PrefabInstance:
       propertyPath: petObeject
       value: 
       objectReference: {fileID: 1899511514}
+    - target: {fileID: 1484271927226740721, guid: 51db9664f3a431b42a02b931ee93a0ce, type: 3}
+      propertyPath: petObeject
+      value: 
+      objectReference: {fileID: 1899511514}
     - target: {fileID: 2221515451787348187, guid: 51db9664f3a431b42a02b931ee93a0ce, type: 3}
       propertyPath: m_Name
       value: Eammon
@@ -8404,9 +8408,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Level0-1-Gate
-  isLocked: 0
+  isLocked: 1
   newScenePassword: gate
-  KeyPassword: 
+  KeyPassword: foundDan
 --- !u!61 &1747683355
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8770,7 +8774,7 @@ PrefabInstance:
     - target: {fileID: 1290037387986109347, guid: 1f2575b5feeea7540a192c102e242a77, type: 3}
       propertyPath: petObeject
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 546549252}
     - target: {fileID: 4277595389830641464, guid: 1f2575b5feeea7540a192c102e242a77, type: 3}
       propertyPath: m_Material
       value: 
@@ -10710,6 +10714,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7912551796520278660, guid: ddad771c94f795f419bb67592cf044a8, type: 3}
+      propertyPath: itemSlug
+      value: gummy
+      objectReference: {fileID: 0}
+    - target: {fileID: 7912551796520278660, guid: ddad771c94f795f419bb67592cf044a8, type: 3}
+      propertyPath: pickable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7912551796520278661, guid: ddad771c94f795f419bb67592cf044a8, type: 3}
       propertyPath: m_Name
       value: Dana

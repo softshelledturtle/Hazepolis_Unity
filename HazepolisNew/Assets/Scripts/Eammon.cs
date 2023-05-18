@@ -66,7 +66,7 @@ public class Eammon : MonoBehaviour
         //對話時角色停止移動
         if (DialogManager.isActive == true)
             return;
-        if (inputEnabled == true)
+        if (inputEnabled == true && DialogManager.isActive)
         {
             Move();
         }

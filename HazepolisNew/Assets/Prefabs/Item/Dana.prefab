@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7912551796391639094}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 6, z: 0}
+  m_LocalPosition: {x: 0.36, y: 11.01, z: 0}
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children: []
   m_Father: {fileID: 7912551796520278666}
@@ -272,7 +272,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-  - 
+  - "\u6211\u7761\u591A\u4E45\u4E86......"
+  - "\u5927\u53D4\u4F60\u662F\u8AB0?"
+  - "\u4F60\u8AAA\u4F60\u6703\u5E36\u6211\u56DE\u5BB6?"
+  - "\u6211\u600E\u9EBC\u53EF\u80FD\u76F8\u4FE1\u964C\u751F\u4EBA\uFF01"
+  - "\u751A\u9EBC\uFF01\uFF1F"
+  - "\u5927\u53D4\u4F60\u6709\u5E15\u5E15\u5947\u8EDF\u7CD6\u55CE\uFF01"
+  - "\u6709\u5E15\u5E15\u5947\u8EDF\u7CD6\u7684\u4EBA\u90FD\u4E0D\u662F\u58DE\u4EBA~"
+  - "\u8D70\u5427~\u8A18\u5F97\u5728\u8DEF\u4E0A\u5206\u6211\u5403\u5594\uFF01"
   name: "\u6234\u7D0D"
   pickable: 0
   itemSlug: 

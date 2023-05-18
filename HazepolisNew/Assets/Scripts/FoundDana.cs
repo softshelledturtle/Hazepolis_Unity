@@ -7,6 +7,7 @@ public class FoundDana : MonoBehaviour
 {
     private SkeletonAnimation skeletonAnimation;
     BoxCollider2D boxCollider2;
+    bool completeTalk;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,16 +22,27 @@ public class FoundDana : MonoBehaviour
         {
             skeletonAnimation.state.SetAnimation(0, "su", false);
             skeletonAnimation.timeScale = 1;
-            Eammon.instance.foundDan = true;
+
+        }
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                completeTalk = true;
+            }
 
         }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
 
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && completeTalk)
         {
-            Dan.instance.transform.position = Eammon.instance.transform.position;
+            Eammon.instance.foundDan = true;
+            Eammon.instance.KeyPassword = "foundDan";
             Destroy(gameObject);
         }
     }
