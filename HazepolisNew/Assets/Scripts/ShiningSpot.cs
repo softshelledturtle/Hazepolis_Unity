@@ -9,12 +9,15 @@ public class ShiningSpot : NPC
     public string itemSlug;
 
     public PickupItem pickupItem;
+    private QuestTarget questTarget;
+
     private void Start(){
         DropTable = new DropTable();
         DropTable.loot = new List<LootDrop>
         {
             new LootDrop(itemSlug, 100),
         };
+        questTarget = GetComponent<QuestTarget>();
     }
 
     public override void Interact()
@@ -32,6 +35,8 @@ public class ShiningSpot : NPC
     public void GoOut()
     {
         DropLoot();
+        Quest.instance.itemAmount += 1;
+        questTarget.QuestComplete();
         Destroy(gameObject);
     }
 

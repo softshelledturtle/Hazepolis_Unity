@@ -8,21 +8,26 @@ public class QuestGiver : NPC
     public bool Helped { get; set; }
 
     [SerializeField]
-    private GameObject quests;
+    public GameObject quests;
 
-    [SerializeField]
-    private string questType;
+    //[SerializeField]
+    //private string questType;
     private Quest Quest { get; set; }
+    public Goal goal;
+    public QuestTarget questTarget;
+    public bool isFinished;//任務完成對話 default false
+
+
     public override void Interact()
     {
-        if(!AssignedQuest && !Helped)
+        if (!AssignedQuest && !Helped)
         {
             base.Interact();
-            AssignQuest();
+            GiveQuest();
         }
-        else if(AssignedQuest && !Helped)
+        else if (AssignedQuest && !Helped)
         {
-            CheckQuest();
+            //CheckQuest();
         }
         else
         {
@@ -30,27 +35,54 @@ public class QuestGiver : NPC
         }
     }
 
-    void AssignQuest()
+    public void GiveQuest()
     {
-        AssignedQuest = true;
-        Quest = (Quest)quests.AddComponent(System.Type.GetType(questType));
-    }
-
-    void CheckQuest()
-    {
-        if (Quest.Completed)
+        //AssignedQuest = true;
+        //Quest = (Quest)quests.AddComponent(System.Type.GetType(questType));
+        if (isFinished == false) 
         {
-            Quest.GiveReward();
-            Helped = true;
-            AssignedQuest = false;
+            if (goal.questStatus == Goal.QuestStatus.Waiting)
+            {
+                //give quest
+                goal.questStatus = Goal.QuestStatus.Accepted;
+                Quest.instance.Goals.Add(goal);
 
-            DialogueSystem.Instance.AddNewDialogue(new string[] { "Thanks for helping", "here you go" }, name);
-            Debug.Log("DialogueSystem: Thanks");
+                if (goal.questType == Goal.QuestType.Collect)
+                {
+                    questTarget.QuestComplete();
+                }
+            }
+            if (goal.questType == Goal.QuestType.Collect)
+            {
+                questTarget.QuestComplete();
+            }
         }
         else
         {
-            DialogueSystem.Instance.AddNewDialogue(new string[] { "Thanks for helping", "here you go" }, name);
-            Debug.Log("DialogueSystem: Still undone");
+            //already has quest
+            Debug.Log(string.Format("QUEST:{0} has accepted already", goal.questname));
         }
+        QuestManager.instance.UpdateGoals();
     }
-}
+    
+
+ }
+
+//void CheckQuest()
+//{
+//    if (Quest.Completed)
+//    {
+//        Quest.GiveReward();
+//        Helped = true;
+//        AssignedQuest = false;
+
+//        DialogueSystem.Instance.AddNewDialogue(new string[] { "Thanks for helping", "here you go" }, name);
+//        Debug.Log("DialogueSystem: Thanks");
+//    }
+//    else
+//    {
+//        DialogueSystem.Instance.AddNewDialogue(new string[] { "Thanks for helping", "here you go" }, name);
+//        Debug.Log("DialogueSystem: Still undone");
+//    }
+//}
+

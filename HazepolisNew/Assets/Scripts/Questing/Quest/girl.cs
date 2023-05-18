@@ -16,7 +16,7 @@ public class girl : Quest
         ItemReward = ItemDatabase.Instance.GetItem("coffee_log");
         CoinReward = 100;
 
-        Goals.Add(new CollectionGoal(this, "coffee_log", "Find a Log Coffee.", false, 0, 1));
+        Goals.Add(new CollectionGoal(this, "coffee_log", "Find a Log Coffee.", 0, 1));
 
         Goals.ForEach(g => g.Init());
     }
