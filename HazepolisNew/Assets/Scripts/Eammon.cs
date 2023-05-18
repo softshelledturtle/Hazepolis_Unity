@@ -23,7 +23,7 @@ public class Eammon : MonoBehaviour
     private CapsuleCollider2D capcollider2D;
     private float jumpForce = 2000.0f;
     private float climbingSpeed = 3f;
-    public float walkForce = 25.0f;
+    private float walkForce = 200.0f;
     public float maxWalkForce = 6.0f;
     private bool isJumping = false;
     public bool isClimbling = false;
@@ -169,8 +169,16 @@ public class Eammon : MonoBehaviour
                 }
                 else
                 {
-                    currentState = horizontalKey == 0 ? "idle" : "walk";
-                    maxWalkForce = 6.0f;
+                    if (Input.GetKey(KeyCode.LeftShift))
+                    {
+                        currentState = horizontalKey == 0 ? "idle" : "run";
+                        maxWalkForce = 9.0f;
+                    }
+                    else
+                    {
+                        currentState = horizontalKey == 0 ? "idle" : "walk";
+                        maxWalkForce = 6.0f;
+                    }
                     collider2D.enabled = true;
                 }
             }
