@@ -25,16 +25,16 @@ public class TalkButton : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         Button.SetActive(true);//DialogUI.SetActive(true);
-        DialogueSystem.Instance.currentQuestgiver = questgiver;
-        DialogueSystem.Instance.questTarget = questTarget;
-        DialogueSystem.Instance.talkButton = this;
+        DialogueSystem.instance.currentQuestgiver = questgiver;
+        DialogueSystem.instance.questTarget = questTarget;
+        DialogueSystem.instance.talkButton = this;
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
         Button.SetActive(false);//DialogUI.SetActive(false);
 
-        DialogueSystem.Instance.currentQuestgiver = null;
+        DialogueSystem.instance.currentQuestgiver = null;
 
     }
 
@@ -46,7 +46,7 @@ public class TalkButton : MonoBehaviour
             {
                 DialogUI.SetActive(true);
                 //trigger.StartDialog();
-                DialogueSystem.Instance.AddNewDialogue(lines, npcName);
+                DialogueSystem.instance.AddNewDialogue(lines, npcName);
                 Debug.Log("Conversation");
                 if (this.tag == "Interactable")
                 {
@@ -57,11 +57,11 @@ public class TalkButton : MonoBehaviour
             {
                 if (questgiver.goal.questStatus == Goal.QuestStatus.Completed)
                 {
-                    DialogueSystem.Instance.AddNewDialogue(completelines, npcName);
+                    DialogueSystem.instance.AddNewDialogue(completelines, npcName);
                 }
                 else
                 {
-                    DialogueSystem.Instance.AddNewDialogue(lines, npcName);
+                    DialogueSystem.instance.AddNewDialogue(lines, npcName);
                 }
             }
 
