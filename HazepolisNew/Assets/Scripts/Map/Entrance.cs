@@ -11,6 +11,7 @@ public class Entrance : MonoBehaviour
         if(Eammon.instance.scenePassWord == entrancePassword)
         {
             Eammon.instance.transform.position = transform.position;
+            //Dan.instance.transform.position = transform.position;
             if (!Eammon.instance.foundDan)
             {
                 Dan.instance.transform.position = new Vector3(0, 20, 0);

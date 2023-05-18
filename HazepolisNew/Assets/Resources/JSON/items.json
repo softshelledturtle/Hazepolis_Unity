@@ -14,10 +14,40 @@
       }
     ]
   },
+ {
+    "objectSlug": "black_coffee",
+    "itemName": "黑咖啡",
+    "description": "喝黑咖啡能消水腫。喝黑咖啡能防止失智。喝黑咖啡能改善血液循環。你還不喝嗎？",
+    "itemType": "Consumable",
+    "actionName": "喝！",
+    "itemModifier": 0,
+    "Stats": [
+      {
+        "StatType": "Sanity",
+        "BaseValue": 10,
+        "StatName": "Sanity"
+      }
+    ]
+  },
+  {
+    "objectSlug": "latte",
+    "itemName": "拿鐵",
+    "description": "香濃美味的拿鐵，為你的一天帶來完美的開始。",
+    "itemType": "Consumable",
+    "actionName": "喝掉",
+    "itemModifier": 0,
+    "Stats": [
+      {
+        "StatType": "Sanity",
+        "BaseValue": 10,
+        "StatName": "Sanity"
+      }
+    ]
+  },
   {
     "objectSlug": "key",
     "itemName": "地下室鑰匙",
-    "description": "這把鑰匙好像在哪裡看過....../n還是我曾經使用過？",
+    "description": "這把鑰匙好像在哪裡看過......\n還是我曾經使用過？",
     "itemType": "Quest",
     "actionName": "使用",
     "itemModifier": 0
@@ -44,5 +74,22 @@
         "StatName": "Sanity"
       }
     ]
+  },
+  {
+    "objectSlug": "hand_towel",
+    "itemName": "粉色絲巾",
+    "description": "有些老舊的粉色絲巾，在經歷過太陽的曝曬與雨水的洗禮後有些褪色，然而其中的愛意不曾減少一絲。",
+    "itemType": "Quest",
+    "actionName": "把玩",
+    "itemModifier": 0
+  },
+  {
+  
+    "objectSlug": "sun_and_moon",
+    "itemName": "《從前從前：三歲小孩也能讀懂的神話故事書》",
+    "description": "「將傳統神話故事以互動式童話書重新呈現，用最簡單有趣的方式幫助您的孩子了解神話故事！」\n「目錄：一、    二、    三、    ……」",
+    "itemType": "Quest",
+    "actionName": "翻開",
+    "itemModifier": 0
   }
 ]
