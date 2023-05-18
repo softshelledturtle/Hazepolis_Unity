@@ -5,35 +5,40 @@ using UnityEngine.UI;
 
 public class QuestNameButton : MonoBehaviour
 {
-    public Text questNameText;
-    public Text questBtnName;
+    //public static QuestNameButton instance; 
+
     public Quest currentData;
+
+    public Text questNameText;
     public Text questContentText;
     public Text questRequirement;
     public Text questReward;
 
-    public void SetupNameButton(Quest  quesData)
-    {
-        currentData = quesData;
-
-        //if (quesData.isComplete)
-            questNameText.text = quesData.QuestName + "(งนฆจ)";
-        //else
-            questNameText.text = quesData.QuestName;
-    }
 
     private void Awake()
     {
+        Quest.instance = currentData;
         GetComponent<Button>().onClick.AddListener(UpdateQuestContent);
+        //if (instance == null) { instance = this; }
+        //else
+        //{
+        //    if (instance != this)
+        //    {
+        //        Destroy(gameObject);
+        //    }
+        //}
+        //DontDestroyOnLoad(transform.root.gameObject);
     }
     void UpdateQuestContent()
     {
+        
         questContentText.text = currentData.Description;
         questNameText.text = currentData.QuestName;
-        questBtnName.text = currentData.QuestName;
-
+        
         questReward.text = currentData.QuestReward;
         questRequirement.text = currentData.QuestRequire;
+
+
         //QuestUI.Instance.SetupRequireList(currentData);
 
         //foreach (Transform item in QuestUI.Instance.rewardTransform)
@@ -47,4 +52,6 @@ public class QuestNameButton : MonoBehaviour
         //    QuestUI.Instance.SetupRewardItem(item.itemData, item.amount);
         //}
     }
+
+
 }
