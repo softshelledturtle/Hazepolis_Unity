@@ -2418,11 +2418,6 @@ Transform:
   m_Father: {fileID: 1354757647}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &457226304 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5709138918361774540, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
-  m_PrefabInstance: {fileID: 673129213}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &464548275
 GameObject:
   m_ObjectHideFlags: 0
@@ -8549,27 +8544,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8193352962063321103, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
   m_PrefabInstance: {fileID: 673129213}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1559179664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1559179662}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a20c69299eef90d41bbe531eae4ba8f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Button: {fileID: 457226304}
-  DialogUI: {fileID: 391327267}
-  questgiver: {fileID: 0}
-  questTarget: {fileID: 0}
-  talkButton: {fileID: 1559179664}
-  npcName: "\u83AB\u7F85"
-  lines: []
-  congratslines: []
-  completelines: []
 --- !u!114 &1559179665
 MonoBehaviour:
   m_ObjectHideFlags: 0
