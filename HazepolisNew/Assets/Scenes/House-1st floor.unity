@@ -4782,7 +4782,6 @@ MonoBehaviour:
   MainPlayer:
   - {fileID: 1649466145}
   - {fileID: 1561998285}
-  foundDan: 0
   threshold: 0.1
   iCharcaterCount: 0
   cam: {fileID: 813101152}
@@ -5389,7 +5388,55 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2919287984310615948, guid: 465b8e34f667e164fbbd20f73723390a, type: 3}
       propertyPath: itemSlug
-      value: coffee_log
+      value: sun_and_moon
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919287984310615948, guid: 465b8e34f667e164fbbd20f73723390a, type: 3}
+      propertyPath: dialogue.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919287984310615948, guid: 465b8e34f667e164fbbd20f73723390a, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: "(\u64A5\u958B\u8718\u86DB\u7DB2)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919287984310615948, guid: 465b8e34f667e164fbbd20f73723390a, type: 3}
+      propertyPath: dialogue.Array.data[1]
+      value: "\u9019\u662F\u751A\u9EBC?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919287984310615948, guid: 465b8e34f667e164fbbd20f73723390a, type: 3}
+      propertyPath: dialogue.Array.data[2]
+      value: "\u9019\u672C\u66F8\u600E\u9EBC\u6703\u88AB\u653E\u5728\u9019\u88E1?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919287984310615948, guid: 465b8e34f667e164fbbd20f73723390a, type: 3}
+      propertyPath: dialogue.Array.data[3]
+      value: "(\u7FFB\u958B)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919287984310615948, guid: 465b8e34f667e164fbbd20f73723390a, type: 3}
+      propertyPath: dialogue.Array.data[4]
+      value: "(\u7B11)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919287984310615948, guid: 465b8e34f667e164fbbd20f73723390a, type: 3}
+      propertyPath: dialogue.Array.data[5]
+      value: "\u9084\u8A18\u5F97\u7576\u6642\u59B3\u7E3D\u6703\u5728\u7761\u524D\u5435\u8457\u8981\u6211\u5538\u7D66\u4F60\u807D\u5462"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919287984310615948, guid: 465b8e34f667e164fbbd20f73723390a, type: 3}
+      propertyPath: dialogue.Array.data[6]
+      value: ......
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919287984310615948, guid: 465b8e34f667e164fbbd20f73723390a, type: 3}
+      propertyPath: dialogue.Array.data[7]
+      value: "\u59B3"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919287984310615948, guid: 465b8e34f667e164fbbd20f73723390a, type: 3}
+      propertyPath: dialogue.Array.data[8]
+      value: ......
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919287984310615948, guid: 465b8e34f667e164fbbd20f73723390a, type: 3}
+      propertyPath: dialogue.Array.data[9]
+      value: "\u662F\u8AB0?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2919287984310615948, guid: 465b8e34f667e164fbbd20f73723390a, type: 3}
+      propertyPath: dialogue.Array.data[10]
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2919287984310615949, guid: 465b8e34f667e164fbbd20f73723390a, type: 3}
       propertyPath: m_Name
