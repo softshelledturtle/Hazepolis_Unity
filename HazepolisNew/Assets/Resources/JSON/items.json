@@ -48,7 +48,7 @@
     "objectSlug": "key",
     "itemName": "地下室鑰匙",
     "description": "這把鑰匙好像在哪裡看過......\n還是我曾經使用過？",
-    "itemType": "Consumable",
+    "itemType": "Quest",
     "actionName": "使用",
     "itemModifier": 0
   },
