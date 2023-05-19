@@ -1976,10 +1976,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Button: {fileID: 1314950356}
-  DialogUI: {fileID: 391327267}
+  DialogUI: {fileID: 1163536820288472581, guid: a723f40223379814c94e7bd572a437af, type: 3}
   questgiver: {fileID: 0}
   questTarget: {fileID: 0}
-  talkButton: {fileID: 0}
+  talkButton: {fileID: 370173755}
   npcName: "\u5546\u4EBA\u798F\u5C40"
   lines:
   - "\u5594\u5440?\u7A00\u5BA2\u554A\u7A00\u5BA2~\u6C92\u60F3\u5230\u6703\u5728\"\u5B64\u57CE\"\u9019\u770B\u5230\u7570\u80FD\u8005\u5927\u4EBA\n\u6211\u5F88\u69AE\u5E78\u80FD\u70BA\u4F60\u670D\u52D9\uFF0C\u6709\u751A\u9EBC\u770B\u4E0A\u773C\u7684\u5546\u54C1\u55CE?"
@@ -1997,18 +1997,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 370173753}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23fbcf779c767064b8247f875701a097, type: 3}
+  m_Script: {fileID: 11500000, guid: c11f4f20bcb057d4eaeb983ce37f4a63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-  - "\u5594\u5440?\u7A00\u5BA2\u554A\u7A00\u5BA2~\u6C92\u60F3\u5230\u6703\u5728\"\u5B64\u57CE\"\u9019\u770B\u5230\u7570\u80FD\u8005\u5927\u4EBA
-    \u6211\u5F88\u69AE\u5E78\u80FD\u70BA\u4F60\u670D\u52D9\uFF0C\u6709\u751A\u9EBC\u770B\u4E0A\u773C\u7684\u5546\u54C1\u55CE?"
-  - "\u6211\u600E\u9EBC\u770B\u51FA\u4F86\u7684?\u9019\u662F\u4F5C\u70BA\u5546\u4EBA\u7684\u76F4\u89BA\uFF01
-    \u66AB\u6642\u4E0D\u9700\u8981\u5546\u54C1\uFF0C\u800C\u662F\u9700\u8981\u60C5\u5831?
-    \u7576\u7136\u6C92\u554F\u984C~"
-  - "\u9019\u500B\u5340\u57DF\u96D6\u8AAA\u662F\"\u5B64\u57CE\"\u4F46\u4E5F\u4E0D\u662F\u5B8C\u5168\u5C01\u9589\uFF0C\u60F3\u9032\u5230\u57CE\u5167\u7684\u8A71\u5C31\u5F80\u4E0A\u8D70\u5427\uFF0C\u9019\u88E1\u5DF2\u7D93\u96E2\u5730\u8868\u5F88\u8FD1\u4E86~"
-  - "\u80FD\u8207\u60A8\u505A\u751F\u610F\u662F\u6211\u7684\u69AE\u5E78\uFF0C\u90A3\u9EBC\uFF0C\u671F\u5F85\u60A8\u7684\u518D\u5EA6\u5149\u81E8~"
-  name: "\u83AB\u7F85"
+  questName: 
+  questType: 0
+  amount: 0
+  hasTalked: 0
+  hasReach: 0
 --- !u!114 &370173757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2131,11 +2127,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &391327267 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4623310477529587319, guid: 1a813e8a02f076f4384f00c160d7c960, type: 3}
-  m_PrefabInstance: {fileID: 1631184154}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &406609871
 GameObject:
   m_ObjectHideFlags: 0
@@ -2422,11 +2413,6 @@ Transform:
   m_Father: {fileID: 1354757647}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &457226304 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5709138918361774540, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
-  m_PrefabInstance: {fileID: 673129213}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &464548275
 GameObject:
   m_ObjectHideFlags: 0
@@ -4642,24 +4628,6 @@ MonoBehaviour:
   _animationName: animation
   loop: 1
   timeScale: 1
---- !u!114 &909966886
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 909966883}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23fbcf779c767064b8247f875701a097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-  - "\u4F60\u597D\u554A\u5148\u751F\uFF0C\u5F88\u9AD8\u8208\u8A8D\u8B58\u4F60"
-  - "\u4F60\u662F\u5F9E\u5916\u9762\u4F86\u7684\u55CE?\u5BE6\u4E0D\u76F8\u779E\uFF0C\u6211\u4E00\u76F4\u60F3\u70BA\u6211\u7684\u59BB\u5B50\u5E36\u4E00\u4E9B\u5730\u8868\u7269\u54C1\u4F5C\u70BA\u79AE\u7269..."
-  - "\u53EF\u60DC\u901A\u5F80\u5730\u9762\u7684\u8DEF\u5DF2\u7D93\u88AB\u5C01\u6B7B\u4E86...\u5982\u679C\u4F60\u6709\u627E\u5230\u8DEF\u7684\u8A71\u80FD\u544A\u8A34\u6211\u55CE?"
-  - "\u5341\u5206\u611F\u8B1D\uFF01\u6211\u6703\u671F\u5F85\u8457\u4F60\u7684\u6D88\u606F\u7684"
-  name: "\u83AB\u7F85"
 --- !u!33 &909966887
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4709,6 +4677,23 @@ MeshRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 1
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &909966889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909966883}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c11f4f20bcb057d4eaeb983ce37f4a63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questName: 
+  questType: 0
+  amount: 0
+  hasTalked: 0
+  hasReach: 0
 --- !u!114 &909966890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4722,13 +4707,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Button: {fileID: 1102999180}
-  DialogUI: {fileID: 391327267}
+  DialogUI: {fileID: 1163536820288472581, guid: a723f40223379814c94e7bd572a437af, type: 3}
   questgiver: {fileID: 0}
   questTarget: {fileID: 0}
-  talkButton: {fileID: 0}
+  talkButton: {fileID: 909966890}
   npcName: "\u83AB\u7F85"
   lines:
-  - 
+  - "\u4F60\u597D\u554A\u5148\u751F\uFF0C\u5F88\u9AD8\u8208\u8A8D\u8B58\u4F60"
+  - "\u4F60\u662F\u5F9E\u5916\u9762\u4F86\u7684\u55CE?\u5BE6\u4E0D\u76F8\u779E\uFF0C\u6211\u4E00\u76F4\u60F3\u70BA\u6211\u7684\u59BB\u5B50\u5E36\u4E00\u4E9B\u5730\u8868\u7269\u54C1\u4F5C\u70BA\u79AE\u7269..."
+  - "\u53EF\u60DC\u901A\u5F80\u5730\u9762\u7684\u8DEF\u5DF2\u7D93\u88AB\u5C01\u6B7B\u4E86...\u5982\u679C\u4F60\u6709\u627E\u5230\u8DEF\u7684\u8A71\u80FD\u544A\u8A34\u6211\u55CE?"
+  - "\u5341\u5206\u611F\u8B1D\uFF01\u6211\u6703\u671F\u5F85\u8457\u4F60\u7684\u6D88\u606F\u7684"
   congratslines: []
   completelines: []
 --- !u!1 &922379081
@@ -8551,28 +8539,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8193352962063321103, guid: 17357b1ae8ef5404a86ed9e5d1c56f96, type: 3}
   m_PrefabInstance: {fileID: 673129213}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1559179664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1559179662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a20c69299eef90d41bbe531eae4ba8f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Button: {fileID: 457226304}
-  DialogUI: {fileID: 391327267}
-  questgiver: {fileID: 0}
-  questTarget: {fileID: 0}
-  talkButton: {fileID: 0}
-  npcName: "\u83AB\u7F85"
-  lines:
-  - 
-  congratslines: []
-  completelines: []
 --- !u!114 &1559179665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8582,12 +8548,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1559179662}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23fbcf779c767064b8247f875701a097, type: 3}
+  m_Script: {fileID: 11500000, guid: c11f4f20bcb057d4eaeb983ce37f4a63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue:
-  - ......
-  name: "\u8CFD\u897F\u8389\u4E9E"
+  questName: 
+  questType: 0
+  amount: 0
+  hasTalked: 0
+  hasReach: 0
 --- !u!114 &1559179666
 MonoBehaviour:
   m_ObjectHideFlags: 0
